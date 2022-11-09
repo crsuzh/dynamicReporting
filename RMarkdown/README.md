@@ -12,6 +12,6 @@ To use R Markdown you need
 * Optional, but highly recommended is the **RStudio** IDE
   (<https://posit.co/download/rstudio-desktop/>)
 
-## How to use
+## Useful links
 
 * <https://cran.r-project.org/web/packages/rmarkdown/vignettes/rmarkdown.html>
