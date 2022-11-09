@@ -6,25 +6,28 @@ format: html
 embed-resources: true
 ---
 
-# Import data set
+## Import data set
 
 ```{r}
 #| label: data
 ## TODO find example data set
-data("iris")
+dat <- read.csv(file = "../data/iris.csv")
 ```
 
-# Data manipulations
+## Data manipulations
+
 ```{r}
 #| label: data-manipulations
 ```
 
-# Create plot
+## Create plot
+
 ```{r}
 #| label: plot
 ```
 
-# Create regression coefficient table
+## Create regression coefficient table
+
 ```{r}
 #| label: regression
 ```

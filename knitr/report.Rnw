@@ -18,9 +18,10 @@ knitr::opts_chunk$set(echo = TRUE, # display R code in output
 
 
 \section*{Import data set}
+
 << "data" >>=
 ## TODO find data set
-data("iris")
+dat <- read.csv(file = "../data/iris.csv")
 @
 
 
@@ -31,7 +32,6 @@ data("iris")
 
 
 \section*{Create regression coefficient table}
-
 
 
 \end{document}

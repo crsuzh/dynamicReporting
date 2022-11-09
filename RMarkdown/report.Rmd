@@ -18,21 +18,23 @@ knitr::opts_chunk$set(echo = TRUE, # display R code in output
 
 ```{r "data"}
 ## TODO find example data set
-data("iris")
+dat <- read.csv(file = "../data/iris.csv")
 ```
 
-# Data manipulations
+## Data manipulations
+
 ```{r "data-manipulations"}
 
 ```
 
-# Create plot
+## Create plot
+
 ```{r "plot"}
 
 ```
 
-# Create regression coefficient table
+## Create regression coefficient table
+
 ```{r "regression"}
 
 ```
-
