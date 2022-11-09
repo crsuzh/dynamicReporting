@@ -13,9 +13,12 @@ To use knitr you need
   (<https://www.tug.org/texlive/>) or tinytex (<https://yihui.org/tinytex/>)
   
 * Optional, but highly recommended is the **RStudio** IDE
-  (<https://posit.co/download/rstudio-desktop/>)
+  (<https://posit.co/download/rstudio-desktop/>). knitr can alternatively be
+  used from other editors (<https://yihui.org/knitr/demo/editors/>), such as
+  **Emacs**, or from an R session.
 
 ## Useful links
 
 * <https://yihui.org/knitr/>
+
 * the endless options of knitr <https://yihui.org/knitr/options/>

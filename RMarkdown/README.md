@@ -10,7 +10,8 @@ To use R Markdown you need
   install from an R session with `install.packages("rmarkdown")`
   
 * Optional, but highly recommended is the **RStudio** IDE
-  (<https://posit.co/download/rstudio-desktop/>)
+  (<https://posit.co/download/rstudio-desktop/>). R Markdown can alternatively
+  be used from other editors, such as **Emacs**, or from an R session.
 
 ## Useful links
 

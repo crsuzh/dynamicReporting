@@ -1,0 +1,30 @@
+---
+title: "Dynamic Reporting with Quarto"
+author: "Felix Hofmann, Samuel Pawel"
+date: "9 November 2022"
+format: html
+embed-resources: true
+---
+
+# Import data set
+
+```{r}
+#| label: data
+## TODO find example data set
+data("iris")
+```
+
+# Data manipulations
+```{r}
+#| label: data-manipulations
+```
+
+# Create plot
+```{r}
+#| label: plot
+```
+
+# Create regression coefficient table
+```{r}
+#| label: regression
+```
