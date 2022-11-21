@@ -14,4 +14,5 @@ To use Jupyter Notebook you need
 
 ## Useful links
 
-* <https://docs.jupyter.org/en/latest/>
+* Reproducible Science with Jupyter Notebooks course (<https://reproducible-science-curriculum.github.io/workshop-RR-Jupyter/>)
+* Official documentation (<https://docs.jupyter.org/en/latest/>)

@@ -15,4 +15,8 @@ To use R Markdown you need
 
 ## Useful links
 
-* <https://cran.r-project.org/web/packages/rmarkdown/vignettes/rmarkdown.html>
+* R Markdown book (<https://bookdown.org/yihui/rmarkdown/>)
+
+* Excellent tutorial series <https://rmarkdown.rstudio.com/lesson-1.html>
+
+* Package vignette with more links <https://cran.r-project.org/web/packages/rmarkdown/vignettes/rmarkdown.html>

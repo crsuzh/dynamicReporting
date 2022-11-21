@@ -20,14 +20,11 @@ dat <- read.csv(file = "../data/iris.csv")
 #| label: data-manipulations
 ```
 
-## Create plot
+## Software versions and computational environment
+
+It is good practice to save details on software versions and computational environment when creating dynamic reports.
 
 ```{r}
-#| label: plot
-```
-
-## Create regression coefficient table
-
-```{r}
-#| label: regression
+#| label: info
+sessionInfo()
 ```
