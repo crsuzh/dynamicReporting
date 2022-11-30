@@ -1,23 +1,63 @@
 ---
-title: "Dynamic Reporting with Quarto"
+title: "Report: Analysis of names from newborn children in Zurich"
 author: "Felix Hofmann, Samuel Pawel"
-date: "9 November 2022"
+date: "30 November 2022"
 format: html
 embed-resources: true
 ---
 
-## Import data set
-
 ```{r}
-#| label: data
-## TODO find example data set
-dat <- read.csv(file = "../data/iris.csv")
+#| echo: FALSE
+## this is the R chunk to specify the options
+knitr::opts_chunk$set(echo = TRUE, # display R code
+                      warning = FALSE, # don't display warning messages
+                      message = FALSE, # don't display package loading messages
+                      fig.align = "center", # center figures
+                      out.width = "100%" # figures fill entire width
+                      )
 ```
 
-## Data manipulations
+In this document we will give an example of dynamic reporting using a data set containing the names of newborn children in the city of Zurich since the year 1993. The data were downloaded from <https://data.stadt-zuerich.ch/dataset/bev_vornamen_baby_od3700>.
+
+## Import data and perform manipulations
+
+We will now import the data and perform some manipulations, such as rename the variables into English and computing the most common name by year and sex.
+
 
 ```{r}
 #| label: data-manipulations
+## load data
+dat <- read.csv(file = "../data/namesZurich.csv")
+
+## data manipulations
+library(dplyr)
+datCleaned <- dat %>%
+    rename(year = StichtagDatJahr,
+           name = Vorname,
+           sex = SexLang,
+           births = AnzGebuWir) %>%
+    group_by(year, sex) %>%
+    top_n(n = 1, wt = births)
+```
+
+Last year, the most common male name was `r filter(datCleaned, year == 2021, sex == "männlich")$name` whereas the most common female name was `r filter(datCleaned, year == 2021, sex == "weiblich")$name`.
+
+## Data visualization
+
+We will now visualize the most common name by year and sex.
+
+```{r}
+#| label: plot
+library(ggplot2)
+ggplot(data = datCleaned, aes(x = year, y = births, color = sex)) +
+    geom_line(aes(group = name), alpha = 0.3, show.legend = FALSE) +
+    geom_label(aes(label = name), alpha = 0.8, show.legend = FALSE, size = 2) +
+    scale_color_brewer(palette = "Dark2") +
+    scale_x_continuous(breaks = seq(1995, 2020, 5)) + 
+    labs(x = "Year", y = "Number of births",
+         title = "Most common name in Zurich for newborns by year") +
+    theme_minimal() +
+    theme(panel.grid.minor = element_blank())
 ```
 
 ## Software versions and computational environment
