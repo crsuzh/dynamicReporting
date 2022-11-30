@@ -1,7 +1,7 @@
 ---
-title: "Dynamic Reporting with R Markdown"
+title: "Report: Analysis of names from newborn children in Zurich"
 author: "Felix Hofmann, Samuel Pawel"
-date: "9 November 2022"
+date: "30 November 2022"
 output: html_document
 ---
 
@@ -36,6 +36,8 @@ datCleaned <- dat %>%
     top_n(n = 1, wt = births)
 ```
 
+Last year, the most common male name was `r filter(datCleaned, year == 2021, sex == "männlich")$name` whereas the most common female name was `r filter(datCleaned, year == 2021, sex == "weiblich")$name`.
+
 ## Data visualization
 
 We will now visualize the most common name by year and sex.
@@ -53,10 +55,9 @@ ggplot(data = datCleaned, aes(x = year, y = births, color = sex)) +
     theme(panel.grid.minor = element_blank())
 ```
 
-
 ## Software versions and computational environment
 
-It is good practice to save details on software versions and computational environment when creating dynamic reports. 
+It is good practice to save details on software versions and computational environment when creating dynamic reports.
 
 ```{r "info"}
 sessionInfo()
