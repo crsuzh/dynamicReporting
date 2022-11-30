@@ -1,5 +1,5 @@
 ---
-title: "Report: Analysis of names from newborn children in Zurich"
+title: "Analysis of names from newborn children in Zurich"
 author: "Felix Hofmann, Samuel Pawel"
 date: "30 November 2022"
 output: html_document

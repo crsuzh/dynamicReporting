@@ -1,9 +1,9 @@
 \documentclass[a4paper, 11pt]{article}
 \usepackage{url}
 
-\title{Dynamic Reporting with knitr}
+\title{Analysis of names from newborn children in Zurich}
 \author{Felix Hofmann, Samuel Pawel}
-\date{9 November 2022}
+\date{30 November 2022}
 
 \begin{document}
 
