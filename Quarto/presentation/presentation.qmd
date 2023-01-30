@@ -1,0 +1,14 @@
+---
+title: "Dynamic Reporting"
+subtitle: "Workshop at the UZH Reproducibility Day 2023"
+author: "Samuel Pawel and Felix Hofmann <br> Center for Reproducible Science (CRS)"
+format: revealjs
+---
+
+## Schedule
+
+1) What is dynamic reporting?
+
+2) How to do dynamic reporting?
+
+3) Hands-on hacking
