@@ -1,9 +1,14 @@
 ---
 title: "Dynamic Reporting"
 subtitle: "Workshop at the UZH Reproducibility Day 2023"
-author: "Samuel Pawel and Felix Hofmann <br> Center for Reproducible Science (CRS)"
+author: "Samuel Pawel and Felix Hofmann"
+institute: "Center for Reproducible Science (CRS)"
 format: revealjs
+embed-resources: true # create a single file with all depdencies inside
 ---
+
+<!-- options: -->
+<!-- https://quarto.org/docs/reference/formats/presentations/revealjs.html -->
 
 ## Schedule
 
@@ -12,3 +17,45 @@ format: revealjs
 2) How to do dynamic reporting?
 
 3) Hands-on hacking
+
+## Manual reporting workflow
+
+<!-- need to put into one column that displayed correctly in my browser, why? -->
+:::: columns
+::: column{width="100%"}
+![](./diagram1.svg)
+:::
+::::
+
+## What are the disadvantages?
+
+:::: columns
+
+::: column
+- tedious and error-prone
+- not directly reproducible
+- difficult to share/reuse
+- need to repeat if new data
+:::
+
+::: column
+![](./diagram1.svg){fig-align="right"}
+:::
+
+::::
+
+## Dynamic reporting workflow
+
+:::: columns
+::: column{width="100%"}
+![](diagram2.svg)
+:::
+::::
+
+## Popular tools for dynamic reporting
+
+* R Markdown
+* Jupyter Notebooks
+* knitr
+* Quarto
+
