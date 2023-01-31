@@ -1,0 +1,45 @@
+---
+title: "Workshop on Quarto"
+author: "Samuel Pawel & Felix Hofmann"
+format:
+    html:
+        toc: true
+        number-sections: true
+        colorlinks: true
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Analysis of traffic accidens
+
+First of all, let's make sure, we get the data we need. The following `R` code chunk downloads a data set from city of Zurich's open data portal and imports it.
+
+```{r}
+#| label: download-data
+
+# Set a name for our data file
+filename <- "accidents.csv"
+# Define where we want to download it from
+source <- "https://data.stadt-zuerich.ch/dataset/sid_dav_strassenverkehrsunfallorte/download/RoadTrafficAccidentLocations.csv"
+# Check if we already have  it downloaded
+downloaded <- if(file.exists(filename)) TRUE else FALSE
+# If it is not yet downloaded, download it and save it 
+# under the name defined above
+if(!downloaded)
+    download.file(url = source, destfile = filename)
+# Rad the data file
+data <- read.csv(filename, header = TRUE)
+```
+
+Nice, this went well! So now let's see what we have in this data set. The open data portal of the city
+of Zurich 
+
+```{r}
+#| label: exploration
+
+data
+```
+
+
