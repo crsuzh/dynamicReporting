@@ -7,10 +7,10 @@ format: revealjs
 embed-resources: true # create a single file with all depdencies inside
 ---
 
+## Schedule
+
 <!-- options: -->
 <!-- https://quarto.org/docs/reference/formats/presentations/revealjs.html -->
-
-## Schedule
 
 1) What is dynamic reporting?
 
@@ -18,14 +18,14 @@ embed-resources: true # create a single file with all depdencies inside
 
 3) Hands-on hacking
 
+::: aside
+Material at <https://github.com/crsuzh/dynamicReporting>
+:::
+
+
 ## Manual reporting workflow
 
-<!-- need to put into one column that displayed correctly in my browser, why? -->
-:::: columns
-::: column{width="100%"}
-![](./diagram1.svg)
-:::
-::::
+![](./diagram1.svg){.absolute width="100%"}
 
 ## What are the disadvantages?
 
@@ -46,11 +46,7 @@ embed-resources: true # create a single file with all depdencies inside
 
 ## Dynamic reporting workflow
 
-:::: columns
-::: column{width="100%"}
-![](diagram2.svg)
-:::
-::::
+![](diagram2.svg){.absolute width="100%"}
 
 ## Popular tools for dynamic reporting
 
@@ -59,3 +55,105 @@ embed-resources: true # create a single file with all depdencies inside
 * knitr
 * Quarto
 
+## R Markdown 
+
+![](rmarkdown.png){.absolute top="0%" right="0%" width="20%"}
+
+* **R** programming language <br> (> 60 other also possible) <!-- https://bookdown.org/yihui/rmarkdown/language-engines.html -->
+
+* **.Rmd** files 
+
+* **Markdown** text markup language
+
+* **HTML**, **PDF**, **DOCX** output formats (and more)
+
+<!-- . . . -->
+
+<!-- `## Section title` -->
+
+<!-- ### Section title -->
+
+<!-- `This is **bold** and this is *italic*.` -->
+
+<!-- This is **bold** and this is *italic*. -->
+
+::: aside
+<https://rmarkdown.rstudio.com/index.html>
+
+<https://bookdown.org/yihui/rmarkdown/>
+:::
+
+
+## Jupyter Notebooks
+
+![](jupyter.png){.absolute top="0%" right="0%" width="20%"}
+
+* Programming language: **Python** <br> (> 100 other possible)
+
+* Markup language: **Markdown**
+
+* **HTML**, **PDF** output formats (and more)
+
+
+
+## Quarto
+
+![](quarto.png){.absolute top="0%" right="0%" width="20%"}
+
+* Programming language: **R**, **Python**, **Julia**
+
+* Markup language: **Markdown**
+
+* Evolution of R Markdown
+
+* **HTML**, **PDF**, **DOCX** output formats (and more)
+
+::: aside
+<https://quarto.org/>
+:::
+
+## knitr
+
+![](knitr.png){.absolute top="0%" right="0%" width="20%"}
+
+* Programming language: **R** <br> (> 60 other also possible) <!-- https://bookdown.org/yihui/rmarkdown/language-engines.html -->
+
+* Markup languages: **LaTeX** <br> (+ HTML, Markdown, and more)
+
+* **HTML**, **PDF**, **DOCX** output formats (and more)
+
+* steeper learning curve
+
+::: aside
+<https://yihui.org/knitr/>
+:::
+
+## Which tool for whom?
+
+* R Markdown &rarr; established, simple, for R
+* knitr &rarr; established, complex, for R
+* Jupyter Notebooks &rarr; established, for Python and Julia, not very good for dynamic reporting
+* Quarto &rarr; new, simple, for all R, Python and Julia
+
+
+## Useful references
+
+* [R Markdown tutorial](https://rmarkdown.rstudio.com/lesson-1.html)
+
+* [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
+
+* [knitr](https://yihui.org/knitr)
+
+* [Quarto tutorial](https://quarto.org/docs/get-started/hello/vscode.html)
+
+* [Jupyter project](https://docs.jupyter.org/en/latest/)
+
+
+## Exercises
+
+1) Download the data sets from <https://github.crsuzh/dynamicReporting/XXXXX>
+
+2) Produce a dynamic report with the tool of your choice. Use the data from 2020 to
+   compute .... Make a chart of .... Automate 
+
+3) Now use the data from 2020 and 2021 and rerun your analysis
