@@ -16,10 +16,17 @@ embed-resources: true # create a single file with all depdencies inside
 
 2) How to do dynamic reporting?
 
-3) Hands-on hacking
+3) Hands-on exercises
+
 
 ::: aside
 Material at <https://github.com/crsuzh/dynamicReporting>
+:::
+
+::: {.notes}
+Goal 1: First overview of dynamic reporting
+
+Goal 2: Learn about popular tools for dynamic reporting 
 :::
 
 
@@ -35,7 +42,7 @@ Material at <https://github.com/crsuzh/dynamicReporting>
 - tedious and error-prone
 - not directly reproducible
 - difficult to share/reuse
-- need to repeat if new data
+- new data &rarr; need to repeat everything
 :::
 
 ::: column
@@ -50,10 +57,10 @@ Material at <https://github.com/crsuzh/dynamicReporting>
 
 ## Popular tools for dynamic reporting
 
-* R Markdown
-* Jupyter Notebooks
-* knitr
-* Quarto
+* `R Markdown`
+* `knitr`
+* `Quarto`
+* (`Jupyter Notebooks`)
 
 ## R Markdown 
 
@@ -67,6 +74,8 @@ Material at <https://github.com/crsuzh/dynamicReporting>
 
 * **HTML**, **PDF**, **DOCX** output formats (and more)
 
+* `rmarkdown` is an R package
+
 <!-- . . . -->
 
 <!-- `## Section title` -->
@@ -78,13 +87,15 @@ Material at <https://github.com/crsuzh/dynamicReporting>
 <!-- This is **bold** and this is *italic*. -->
 
 ::: aside
+<https://cran.r-project.org/package=rmarkdown>
+
 <https://rmarkdown.rstudio.com/index.html>
 
 <https://bookdown.org/yihui/rmarkdown/>
 :::
 
 
-## Jupyter Notebooks
+<!-- ## Jupyter Notebooks
 
 ![](jupyter.png){.absolute top="0%" right="0%" width="20%"}
 
@@ -92,25 +103,10 @@ Material at <https://github.com/crsuzh/dynamicReporting>
 
 * Markup language: **Markdown**
 
-* **HTML**, **PDF** output formats (and more)
+* **HTML**, **PDF** output formats (and more) -->
 
 
 
-## Quarto
-
-![](quarto.png){.absolute top="0%" right="0%" width="20%"}
-
-* Programming language: **R**, **Python**, **Julia**
-
-* Markup language: **Markdown**
-
-* Evolution of R Markdown
-
-* **HTML**, **PDF**, **DOCX** output formats (and more)
-
-::: aside
-<https://quarto.org/>
-:::
 
 ## knitr
 
@@ -118,35 +114,73 @@ Material at <https://github.com/crsuzh/dynamicReporting>
 
 * Programming language: **R** <br> (> 60 other also possible) <!-- https://bookdown.org/yihui/rmarkdown/language-engines.html -->
 
+* **.Rnw** files 
+
 * Markup languages: **LaTeX** <br> (+ HTML, Markdown, and more)
 
 * **HTML**, **PDF**, **DOCX** output formats (and more)
 
-* steeper learning curve
+* `knitr` is an R package
+
 
 ::: aside
+<https://cran.r-project.org/package=knitr>
+
 <https://yihui.org/knitr/>
+:::
+
+## Quarto
+
+![](quarto.png){.absolute top="0%" right="0%" width="20%"}
+
+* Programming language: **R**, **Python**, **Julia**
+
+* **.qmd** files  <!-- (editable in RStudio, VS Code, and text editors) -->
+
+* Markup language: **Markdown**
+
+* **HTML**, **PDF**, **DOCX** output formats (and more)
+
+* Evolution of R Markdown
+
+* `quarto` is a separate program
+
+
+
+::: aside
+<https://quarto.org/>
 :::
 
 ## Which tool for whom?
 
-* R Markdown &rarr; established, simple, for R
-* knitr &rarr; established, complex, for R
-* Jupyter Notebooks &rarr; established, for Python and Julia, not very good for dynamic reporting
-* Quarto &rarr; new, simple, for all R, Python and Julia
+* `rmarkdown` &rarr; **R** users (beginner to advanced)
+* `knitr` &rarr; **R**+**LaTeX** users (intermediate to advanced) 
+<!-- * Jupyter Notebooks &rarr; established, for Python and Julia, not very good for dynamic reporting -->
+* `quarto` &rarr; **R**/**Python**/**Julia** users (beginner to advanced)
+
+![](rmarkdown-meme.jpg){.absolute bottom="18%" left="0%" width="30%"}
+![](knitr-meme.jpg){.absolute bottom="0%" left="32%" width="30%"}
+![](quarto-meme.jpg){.absolute bottom="10%" left="65%" width="30%"}
 
 
-## Useful references
+## Useful links
+
+* [Dynamic Reporting & Reproducibility in Research](https://www.sts.uzh.ch/de/Lehrangebote-School/Lehrangebote-ab-FS22/Future-Skills/Get-R_eady.html) 
+<br> &rarr; transdisciplinary course at UZH
 
 * [R Markdown tutorial](https://rmarkdown.rstudio.com/lesson-1.html)
+<br> &rarr; good tutorial series from R Studio
 
 * [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
+<br> &rarr; freely available book
 
-* [knitr](https://yihui.org/knitr)
+* [knitr website](https://yihui.org/knitr)
+<br> &rarr; very comprehensive website from the `knitr` author
 
 * [Quarto tutorial](https://quarto.org/docs/get-started/hello/vscode.html)
+<br> &rarr; good tutorial series from R Studio
 
-* [Jupyter project](https://docs.jupyter.org/en/latest/)
+<!-- * [Jupyter project](https://docs.jupyter.org/en/latest/) -->
 
 
 ## Exercises
