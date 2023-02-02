@@ -193,22 +193,34 @@ Felix
 * [Quarto tutorial](https://quarto.org/docs/get-started/hello/vscode.html)
 <br> &rarr; good tutorial series from R Studio
 
+* [R Markdown cheatsheet](https://posit.co/resources/cheatsheets/)
+
 
 ## Exercises
 
-1) Download the data sets on **accidents in Zurich** from <https://github.crsuzh/dynamicReporting/XXXXX>.
+1) Download the data sets on **traffic accidents in Zurich** from <https://github.crsuzh/dynamicReporting/workshop/>.
 
-2) Explore the data from the **2020**. 
+2) Explore the data from the **2020** (file `accidents_2020.csv`) . 
    Compute the number of accidents for each **weekday** and **month**.
-   Make a chart of the number of *accidents vs. weekday*, and a chart
-   of the number of *accidents vs. month*. Create an HTML report using 
+   Make plots of the number of *accidents vs. weekday*, and the number of 
+   *accidents vs. month*. Create an HTML report using 
    either `R Markdown` or `Quarto`.
 
-3) Now use the data from 2020 and **2021** and rerun your analysis. Create an updated
-   report.
+3) Now use the data from **2020** and **2021** (file `accidents_2021.csv`) 
+   and create an updated report.
 
 4) **Bonus**: Convert your report to a presentation.
 
 :::{.notes}
 Felix
 :::
+
+## Backup: Code in Quarto Presentation
+
+```{r}
+#| echo: true
+#| fig-align: "center"
+print("Hello quarto")
+x <- seq(-3, 3, 0.01)
+plot(x, dnorm(x), type = "l")
+```

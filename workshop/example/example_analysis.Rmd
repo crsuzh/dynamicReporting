@@ -1,18 +1,16 @@
 ---
-title: "Workshop on Quarto"
+title: "Workshop on R Markdown"
 author: "Samuel Pawel & Felix Hofmann"
 bibliography: refs.bib
-format:
-    html:
-        toc: true
-        number-sections: true
-        colorlinks: true
+output:
+  html_document:
+    toc: true
+    number_sections: true
+    fig_caption: true
+    self_contained: true
 ---
 
-```{r}
-#| label: setup
-#| include: false
-
+```{r "setup", include = FALSE}
 # Load libraries
 library(knitr)
 library(ggplot2)
@@ -22,19 +20,17 @@ library(dplyr)
 # Analysis of traffic accidents
 
 In this section, we will quickly go through an example data set provided
-by @ZHdata which contains data of traffic accidents in the city
-of Zurich. In order to keep things simple, we have already pre-processed
-the data and saved them into csv-files called
-[accidents_2020.csv]() and [accidents_2021.csv](), respectively.
+by @ZHdata which contains data of traffic accidents in the city of
+Zurich. In order to keep things simple, we have already pre-processed
+the data and saved them into csv-files called [accidents_2020.csv]() and
+[accidents_2021.csv](), respectively.
 
 ## Importing the data
 
 First of all, let's make sure, we can import the data sets into an `R`
 session.
 
-```{r}
-#| label: data-import
-
+```{r "data-import"}
 # Set the name of the file we want to import
 filename <- "../accidents_2021.csv"
 # Read the data file
@@ -46,20 +42,16 @@ within the data set. We can do this in two different ways.
 
 First, we could list the names of the variables in the data set by
 including an inline code chunk. We can achieve this by calling
-`paste(names(data), collapse = ", ")`. Evaluating this generates
-the following output: `r paste(names(data), collapse = ", ")`.
+`paste(names(data), collapse = ", ")`. Evaluating this generates the
+following output: `r paste(names(data), collapse = ", ")`.
 
 However, this does not tell us much yet. It would probably be more
-helpful to actually see what this data looks like. 
-Using the `kable` function in combination with the `head` function,
-we can generate a table showing the first few observations of
-the data table.
+helpful to actually see what this data looks like. Using the `kable`
+function in combination with the `head` function, we can generate a
+table showing the first few observations of the data table.
 
-```{r}
-#| label: tbl-display-data
-#| tbl-cap: "The first six rows of our data set."
-
-kable(head(data))
+```{r "tbl-display-data"}
+kable(head(data), caption = "The first six rows of our data set.")
 ```
 
 ## Exploratory data analysis
@@ -67,20 +59,11 @@ kable(head(data))
 Since the data is now in the form we want it to be, we can start
 exploring it. For we can see for
 
-We can for example investigate how many accidents
-happened per month or per weekday. A visual approach to answer
-this question is shown in @fig-accidents-by-month.
-Specifically, @fig-accidents-by-DayMonth-1 shows the number of
-accidents by month whereas @fig-accidents-by-DayMonth-2 illustrates
-the number of accidents by weekday.
+We can for example investigate how many accidents happened per month or
+per weekday. A visual approach to answer this question is shown in the 
+following figures.
 
-```{r}
-#| label: fig-accidents-by-DayMonth
-#| fig-cap: "Number of accidents in Zurich by month and weekday."
-#| fig-subcap:
-#|      - "Number of accidents per month and year."
-#|      - "Number of accidents per weekday and year."
-
+```{r "fig-accidents-by-DayMonth"}
 data %>%
 mutate(
     month = factor(month.name[month], levels = month.name),
@@ -120,11 +103,6 @@ theme(
 )
 ```
 
-
-
-```{r}
-#| label: sessionInfo
-
+```{r "sessionInfo"}
 sessionInfo()
 ```
-
