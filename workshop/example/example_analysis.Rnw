@@ -52,7 +52,7 @@ inserted in the document.
 
 << "data" >>=
 # Set the name of the file we want to import
-filename <- "accidents_2021.csv"
+filename <- "../accidents_2021.csv"
 # Read the data file
 data <- read.csv(filename, header = TRUE, stringsAsFactors = FALSE)
 head(data)
@@ -137,5 +137,6 @@ environment when creating dynamic reports.
 
 << "info", size = "small" >>=
 sessionInfo()
+cat(paste(Sys.time(), Sys.timezone(), "\n"))
 @
 \end{document}
