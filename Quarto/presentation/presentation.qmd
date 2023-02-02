@@ -68,9 +68,9 @@ Goal 2: Learn about popular tools for dynamic reporting
 
 * **R** programming language <br> (> 60 other also possible) <!-- https://bookdown.org/yihui/rmarkdown/language-engines.html -->
 
-* **.Rmd** files 
+* **.Rmd** files (edit in RStudio, VS Code, etc.)
 
-* **Markdown** text markup language
+* Markup language: **Markdown**
 
 * **HTML**, **PDF**, **DOCX** output formats (and more)
 
@@ -90,8 +90,6 @@ Goal 2: Learn about popular tools for dynamic reporting
 <https://cran.r-project.org/package=rmarkdown>
 
 <https://rmarkdown.rstudio.com/index.html>
-
-<https://bookdown.org/yihui/rmarkdown/>
 :::
 
 
@@ -114,7 +112,7 @@ Goal 2: Learn about popular tools for dynamic reporting
 
 * Programming language: **R** <br> (> 60 other also possible) <!-- https://bookdown.org/yihui/rmarkdown/language-engines.html -->
 
-* **.Rnw** files 
+* **.Rnw** files (edit in RStudio, VS Code, etc.)
 
 * Markup languages: **LaTeX** <br> (+ HTML, Markdown, and more)
 
@@ -135,16 +133,15 @@ Goal 2: Learn about popular tools for dynamic reporting
 
 * Programming language: **R**, **Python**, **Julia**
 
-* **.qmd** files  <!-- (editable in RStudio, VS Code, and text editors) -->
+* **.qmd** files  (edit in RStudio, VS Code, etc.)
 
 * Markup language: **Markdown**
 
 * **HTML**, **PDF**, **DOCX** output formats (and more)
 
-* Evolution of R Markdown
+* Evolution of R Markdown (introduced in 2022)
 
 * `quarto` is a separate program
-
 
 
 ::: aside
@@ -185,9 +182,16 @@ Goal 2: Learn about popular tools for dynamic reporting
 
 ## Exercises
 
-1) Download the data sets from <https://github.crsuzh/dynamicReporting/XXXXX>
+1) Download the data sets on **accidents in Zurich** from <https://github.crsuzh/dynamicReporting/XXXXX>.
 
-2) Produce a dynamic report with the tool of your choice. Use the data from 2020 to
-   compute .... Make a chart of .... Automate 
+2) Explore the data from the **2020**. 
+   Compute the number of accidents for each **weekday** and **month**.
+   Make a chart of the number of *accidents vs. weekday*, and a chart
+   of the number of *accidents vs. month*. Create an HTML report using 
+   either `R Markdown` or `Quarto`.
 
-3) Now use the data from 2020 and 2021 and rerun your analysis
+3) Now use the data from 2020 and **2021** and rerun your analysis. Create an updated
+   report.
+
+4) **Bonus**: Convert your report to a presentation.
+
