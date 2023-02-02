@@ -41,11 +41,15 @@ non_informative <- c(
     "AccidentType",
     "AccidentSeverityCategory",
     "RoadType",
-    "AccidentWeekDay",
-    "AccidentMonth",
     "AccidentHour"
 )
+
 data <- data[!(names(data) %in% non_informative)]
+names(data)[names(data) == "AccidentMonth_en"] <- "month_name"
+data$AccidentWeekDay  <- as.integer(sub(".*(\\d)$", "\\1", data$AccidentWeekDay))
+names(data)[names(data) == "AccidentWeekDay"]  <- "weekday"
+names(data)[names(data) == "AccidentWeekDay_en"]  <- "weekday_name"
+
 
 ## 4) Simplify column names
 names(data) <- gsub("(Accident|Category|Involving|_en|_text)", "", names(data))
@@ -60,11 +64,8 @@ data[bool] <- lapply(data[bool], \(x) ifelse(x == "false", FALSE, TRUE))
 ## 6) Construct a column with date objects (note that the day is always "01"
 ## since the day of accidents is not in the data set) and get rid of the
 ## month and year columns
-data$date <- with(data, as.Date(paste0(year, month, "-01"), format = "%Y%B-%d"))
-data <- data[!(names(data) %in% c("month", "year"))]
-
-## 7) Add a column for the number of cases
-data$accidents <- 1L
+# data$date <- with(data, as.Date(paste0(year, month, "-01"), format = "%Y%B-%d"))
+# data <- data[!(names(data) %in% c("month", "year"))]
 
 ## 8)Convert clean data frame to sf object
 # data <- sf::st_as_sf(data, coords = c("coord_e", "coord_n"), crs = 2056)
@@ -77,7 +78,7 @@ data$type <- factor(
     data$type,
     levels = c(
         "Skidding or self-accident",
-        "Overtaking when changing lanes",
+        "Overtaking or changing lanes",
         "Rear-end collision",
         "Turning left or right",
         "Turning-into main road",
@@ -116,8 +117,8 @@ data$roadtype <- factor(
 # Split the pre-processed data and save it into two files
 year <- as.integer(format(data$date, "%Y"))
 month <- as.integer(format(data$date, "%m"))
-idx_first <- year == 2020 & month == 1
-idx_second <- year == 2020 & month %in% c(1, 2)
+idx_first <- year == 2020
+idx_second <- year == 2021
 
-write.csv(data[idx_first, ], "accidents_2020-01.csv")
-write.csv(data[idx_second, ], "accidents_2020-01_02.csv")
+write.csv(data[idx_first, ], "accidents_2020-01.csv", row.names = FALSE))
+write.csv(data[idx_second, ], "accidents_2020-01_02.csv", row.names = FALSE)
