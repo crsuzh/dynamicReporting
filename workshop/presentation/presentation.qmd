@@ -61,6 +61,10 @@ Goal 2: Learn about popular tools for dynamic reporting
 * `Quarto`
 * (`Jupyter Notebooks`)
 
+:::{.notes}
+Felix' part
+:::
+
 ## R Markdown 
 
 ![](rmarkdown.png){.absolute top="0%" right="0%" width="20%"}
@@ -91,7 +95,9 @@ Goal 2: Learn about popular tools for dynamic reporting
 <https://rmarkdown.rstudio.com/index.html>
 :::
 
-
+:::{.notes}
+Felix
+:::
 <!-- ## Jupyter Notebooks
 
 ![](jupyter.png){.absolute top="0%" right="0%" width="20%"}
@@ -147,6 +153,10 @@ Goal 2: Learn about popular tools for dynamic reporting
 <https://quarto.org/>
 :::
 
+:::{.notes}
+Felix
+:::
+
 ## Which tool for whom?
 
 * `rmarkdown` &rarr; **R** users (beginner to advanced)
@@ -199,3 +209,6 @@ Goal 2: Learn about popular tools for dynamic reporting
 
 4) **Bonus**: Convert your report to a presentation.
 
+:::{.notes}
+Felix
+:::
