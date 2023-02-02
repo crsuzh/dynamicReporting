@@ -113,12 +113,11 @@ data$roadtype <- factor(
         "Other"
     )
 )
-
 # Split the pre-processed data and save it into two files
-year <- as.integer(format(data$date, "%Y"))
-month <- as.integer(format(data$date, "%m"))
-idx_first <- year == 2020
-idx_second <- year == 2021
 
-write.csv(data[idx_first, ], "accidents_2020-01.csv", row.names = FALSE))
-write.csv(data[idx_second, ], "accidents_2020-01_02.csv", row.names = FALSE)
+write.csv(data[data$year == 2020, ], "accidents_2020.csv", row.names = FALSE)
+write.csv(
+    data[data$year %in% c(2020, 2021), ],
+    "accidents_2021.csv",
+    row.names = FALSE
+)
