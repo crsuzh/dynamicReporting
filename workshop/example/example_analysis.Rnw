@@ -1,0 +1,108 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage{url}
+
+\title{Analysis of traffic accidents in Zurich}
+\author{Felix Hofmann and Samuel Pawel}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+<< "setup", include = FALSE >>=
+## this is the R chunk to specify the options
+knitr::opts_chunk$set(echo = FALSE, # don't display R code
+                      warning = FALSE, # don't display warning messages
+                      message = FALSE, # don't display package loading messages
+                      fig.align = "center", # center figures
+                      out.width = "100%" # figures fill entire width
+                      )
+@
+
+\section{Analysis of traffic accidents}
+
+In this section, we will quickly go through an example data set provided by
+\@ZHdata which contains data of traffic accidents in the city of Zurich. In order
+to keep things simple, we have already pre-processed the data and saved them
+into csv-files called accidents\_2020.csv and accidents\_2021.csv,
+respectively.
+
+\subsection{Importing the data}
+
+First of all, let's make sure, we can import the data sets into an \textsf{R}
+session.
+
+<< >>=
+filename <- "accidents_2020.csv"
+# Read the data file
+data <- read.csv(filename, header = TRUE, stringsAsFactors = FALSE)
+@
+Now that we have imported the data, we can have a look at the variables
+within the data set. We can do this in two different ways.
+
+
+
+
+\begin{figure}[!htb]
+<< >>=
+library(ggplot2)
+library(dplyr)
+data |>
+    group_by(month_name, year) |>
+    summarise(accidents = n()) |>
+    mutate(monthfac = factor(month_name, levels = month.name)) |>
+    ggplot(aes(x = monthfac, y = accidents, fill = factor(year))) +
+    geom_col(position = position_dodge2(), width = 0.5) +
+    labs(x = "Month", y = "# Accidents", fill = "Year") +
+    theme_minimal() +
+    theme(legend.position = "top",
+          axis.text.x = element_text(angle = 45, vjust = 0.5),
+          panel.grid.major.x = element_blank())
+@
+\end{figure}
+
+\begin{figure}[!htb]
+<< >>=
+data |>
+    group_by(weekday_name, year) |>
+    summarise(accidents = n()) |>
+    mutate(weekday = factor(weekday_name,
+                            levels = c("Monday", "Tuesday", "Wednesday",
+                                       "Thursday", "Friday", "Saturday",
+                                       "Sunday"))) |>
+    ggplot(aes(x = weekday, y = accidents, fill = factor(year))) +
+    geom_col(position = position_dodge2(), width = 0.5) +
+    labs(x = "Weekday", y = "# Accidents", fill = "Year") +
+    theme_minimal() +
+    theme(legend.position = "top",
+          axis.text.x = element_text(angle = 45, vjust = 0.5),
+          panel.grid.major.x = element_blank())
+@
+\end{figure}
+
+\begin{figure}[!htb]
+<< >>=
+data |>
+    group_by(type, year) |>
+    summarise(accidents = n()) |>
+    ggplot(aes(x = type, y = accidents, fill = factor(year))) +
+    geom_col(position = position_dodge2(), width = 0.5) +
+    labs(x = "Accident type", y = "# Accidents", fill = "Year") +
+    coord_flip() +
+    theme_minimal() +
+    theme(legend.position = "top",
+          panel.grid.major.y = element_blank())
+@
+\end{figure}
+
+\newpage
+\section*{Software versions and computational environment}
+
+It is good practice to save details on software versions and computational
+environment when creating dynamic reports.
+
+<< "info", size = "small" >>=
+sessionInfo()
+@
+\end{document}
