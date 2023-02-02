@@ -8,7 +8,6 @@ embed-resources: true # create a single file with all depdencies inside
 ---
 
 ## Schedule
-
 <!-- options: -->
 <!-- https://quarto.org/docs/reference/formats/presentations/revealjs.html -->
 
@@ -116,7 +115,7 @@ Goal 2: Learn about popular tools for dynamic reporting
 
 * Markup languages: **LaTeX** <br> (+ HTML, Markdown, and more)
 
-* **HTML**, **PDF**, **DOCX** output formats (and more)
+* **PDF** output format (and more)
 
 * `knitr` is an R package
 
@@ -160,10 +159,13 @@ Goal 2: Learn about popular tools for dynamic reporting
 ![](quarto-meme.jpg){.absolute bottom="10%" left="65%" width="30%"}
 
 
-## Useful links
+## Useful links 1
 
 * [Dynamic Reporting & Reproducibility in Research](https://www.sts.uzh.ch/de/Lehrangebote-School/Lehrangebote-ab-FS22/Future-Skills/Get-R_eady.html) 
 <br> &rarr; transdisciplinary course at UZH
+
+* [Dynamic Reporting Primer](https://doi.org/10.5281/zenodo.7565735) 
+<br> &rarr; Primer article from the CRS
 
 * [R Markdown tutorial](https://rmarkdown.rstudio.com/lesson-1.html)
 <br> &rarr; good tutorial series from R Studio
@@ -171,13 +173,15 @@ Goal 2: Learn about popular tools for dynamic reporting
 * [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
 <br> &rarr; freely available book
 
+
+## Useful links 2
+
+
 * [knitr website](https://yihui.org/knitr)
 <br> &rarr; very comprehensive website from the `knitr` author
 
 * [Quarto tutorial](https://quarto.org/docs/get-started/hello/vscode.html)
 <br> &rarr; good tutorial series from R Studio
-
-<!-- * [Jupyter project](https://docs.jupyter.org/en/latest/) -->
 
 
 ## Exercises
