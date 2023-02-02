@@ -1,0 +1,136 @@
+---
+title: "Workshop on Quarto"
+author: "Samuel Pawel & Felix Hofmann"
+bibliography: refs.bib
+format:
+    pdf:
+        toc: true
+        number-sections: true
+        colorlinks: true
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+# Load libraries
+library(sf)
+library(knitr)
+library(ggplot2)
+library(leaflet)
+```
+
+# Analysis of traffic accidents
+
+In this section, we will quickly go through an example data set provided
+by @ZHdata which contains data of traffic accidents in the city
+of Zurich. In order to keep things simple, we have already pre-processed
+the data and saved them into csv-files called
+[accidents_2020-01.csv]() and [accidents_2020-01_02.csv](), respectively.
+
+## Importing the data
+
+First of all, let's make sure, we can import the data sets into an `R`
+session.
+
+```{r}
+#| label: data-import
+
+# Set the name of the file we want to import
+filename <- "accidents_2020-01.csv"
+# Read the data file
+data <- read.csv(filename, header = TRUE, stringsAsFactors = FALSE)
+```
+Now that we have imported the data, we can have a look at the variables
+within the data set. We can do this in two different ways.
+
+First, we could list the names of the variables in the data set by
+including an inline code chunk. We can achieve this by calling
+`paste(names(data), collapse = ", ")`. Evaluating this generates
+the following output: `r paste(names(data), collapse = ", ")`.
+
+However, this does not tell us much yet. It would probably be more
+helpful
+
+
+```{r}
+#| label: display-data
+
+kable(head(data))
+data <- sf::st_as_sf(data, coords = c("coord_e", "coord_n"), crs = 2056)
+```
+## Exploratory data analysis
+
+Since the data is now in the form we want it to be, we can start
+exploring it.
+
+For a first look at the data we might just want to see the first few rows.
+This can easily be achieved by the following code chunk.
+
+```{r}
+#| label: data-head
+#| tbl-cap: "The first six rows of our data set."
+
+knitr::kable(head(data))
+```
+
+For example, we could calculate the total number of accidents per year and
+month since the beginning of the data set in
+`r format(min(data$date), format = "%B %Y")`. This leads to the plot shown
+in @fig-tiles-1. As we can see, the number of accidents increased substantially
+in July 2015. According to the
+[description of the data set](https://data.stadt-zuerich.ch/dataset/sid_dav_strassenverkehrsunfallorte#dataset),
+the reason for this is a redefinition of which incidents count as
+accidents. Only considering data from 2016, the same plot looks like
+@fig-tiles-2.
+
+```{r}
+#| label: fig-tiles
+#| fig-cap: "Number of accidents per month and year."
+#| fig-subcap:
+#|      - "Complete data set."
+#|      - "Subset of the data starting in 2016."
+#| layout-ncol: 2
+
+plot1 <- aggregate(n_accidents ~ month + year, data = data, "sum")
+names(plot1) <- c("Month", "Year", "Accidents")
+plot1$Month <- factor(
+    month.abb[plot1$Month],
+    levels = month.abb
+)
+plot1$Year <- as.factor(plot1$Year)
+
+ggplot(
+    data = plot1,
+    aes(x = Month, y = Year, fill = Accidents)
+) +
+geom_tile() +
+theme_minimal() +
+scale_fill_viridis_c() +
+theme(
+    panel.grid = element_blank(),
+)
+
+years <- as.character(2016:max(as.integer(levels(plot1$Year))))
+ggplot(
+    data = plot1[plot1$Year %in% years, ],
+    aes(x = Month, y = Year, fill = Accidents)
+) +
+geom_tile() +
+theme_minimal() +
+scale_fill_viridis_c() +
+theme(
+    panel.grid = element_blank(),
+)
+```
+
+
+
+
+```{r}
+#| label: map
+#| fig-cap: "Map of Accidents in Zurich"
+
+
+```
+

@@ -1,0 +1,409 @@
+"","type","severity","pedestrian","bicycle","motorcycle","roadtype","coord_e","coord_n","weekday","hour","date","accidents"
+"42731","Skidding or self-accident","Light injuries",FALSE,TRUE,FALSE,"Minor road",2683236,1249583,"Wednesday","04h-05h",2020-01-01,1
+"42732","Accident involving pedestrian(s)","Light injuries",TRUE,FALSE,FALSE,"Minor road",2682964,1248220,"Wednesday","05h-06h",2020-01-01,1
+"42733",NA,"Property damage",FALSE,TRUE,FALSE,"Minor road",2682811,1247444,"Wednesday","05h-06h",2020-01-01,1
+"42734","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2679166,1248512,"Wednesday","12h-13h",2020-01-01,1
+"42735","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2682395,1248019,"Wednesday","14h-15h",2020-01-01,1
+"42736",NA,"Light injuries",FALSE,TRUE,FALSE,"Principal road",2682015,1247207,"Wednesday","22h-23h",2020-01-01,1
+"42737","Skidding or self-accident","Light injuries",FALSE,TRUE,FALSE,"Principal road",2681515,1247181,"Thursday","07h-08h",2020-01-01,1
+"42738","Accident involving animal(s)","Property damage",FALSE,FALSE,FALSE,"Minor road",2685345,1247919,"Thursday","09h-10h",2020-01-01,1
+"42739",NA,"Property damage",FALSE,FALSE,FALSE,"Principal road",2683852,1247189,"Thursday","17h-18h",2020-01-01,1
+"42740","Accident involving animal(s)","Property damage",FALSE,FALSE,FALSE,"Motorway",2682388,1242752,"Thursday","17h-18h",2020-01-01,1
+"42741","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2681464,1243157,"Friday","00h-01h",2020-01-01,1
+"42742","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2681758,1250378,"Friday","10h-11h",2020-01-01,1
+"42743","Parking","Property damage",FALSE,FALSE,FALSE,"Other",2684847,1244905,"Friday","10h-11h",2020-01-01,1
+"42744","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2679744,1251197,"Friday","12h-13h",2020-01-01,1
+"42745","Turning-into main road","Property damage",FALSE,FALSE,FALSE,"Minor road",2680556,1252485,"Friday","13h-14h",2020-01-01,1
+"42746","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2681151,1247832,"Friday","17h-18h",2020-01-01,1
+"42747",NA,"Property damage",FALSE,FALSE,FALSE,"Minor road",2682342,1247008,"Friday","18h-19h",2020-01-01,1
+"42748","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Principal road",2684835,1246786,"Friday","19h-20h",2020-01-01,1
+"42749","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2683756,1247152,"Friday","19h-20h",2020-01-01,1
+"42750","Accident involving animal(s)","Property damage",FALSE,FALSE,FALSE,"Principal road",2683004,1250451,"Friday","21h-22h",2020-01-01,1
+"42751","Skidding or self-accident","Light injuries",FALSE,TRUE,FALSE,"Minor road",2685938,1250849,"Saturday","08h-09h",2020-01-01,1
+"42752",NA,"Property damage",FALSE,FALSE,FALSE,"Minor road",2679179,1249045,"Saturday","09h-10h",2020-01-01,1
+"42753","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Principal road",2683803,1250936,"Saturday","13h-14h",2020-01-01,1
+"42754","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2680560,1249775,"Saturday","14h-15h",2020-01-01,1
+"42755","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2684857,1252141,"Saturday","18h-19h",2020-01-01,1
+"42756","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2683288,1247643,"Saturday","22h-23h",2020-01-01,1
+"42757","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2683272,1246963,"Saturday","22h-23h",2020-01-01,1
+"42758","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Principal road",2684726,1246285,"Saturday","23h-00h",2020-01-01,1
+"42759","Turning-into main road","Property damage",FALSE,FALSE,FALSE,"Minor road",2682020,1246106,"Sunday","04h-05h",2020-01-01,1
+"42760","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2684245,1246171,"Sunday","09h-10h",2020-01-01,1
+"42761",NA,"Property damage",FALSE,FALSE,FALSE,"Minor road",2683029,1248759,"Sunday","11h-12h",2020-01-01,1
+"42762","Turning-into main road","Light injuries",FALSE,FALSE,FALSE,"Minor road",2681051,1246938,"Sunday","13h-14h",2020-01-01,1
+"42763",NA,"Property damage",FALSE,FALSE,FALSE,"Minor road",2682691,1247768,"Sunday","15h-16h",2020-01-01,1
+"42764","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2683166,1248945,"Sunday","17h-18h",2020-01-01,1
+"42765","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Principal road",2680231,1246973,"Sunday","19h-20h",2020-01-01,1
+"42766","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2683805,1247264,"Sunday","19h-20h",2020-01-01,1
+"42767","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Principal road",2681907,1246054,"Sunday","20h-21h",2020-01-01,1
+"42768","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2683399,1248287,"Monday","00h-01h",2020-01-01,1
+"42769","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2683541,1251753,"Monday","07h-08h",2020-01-01,1
+"42770","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2683746,1247769,"Monday","12h-13h",2020-01-01,1
+"42771","Parking","Property damage",FALSE,FALSE,FALSE,"Other",2682912,1247580,"Monday","13h-14h",2020-01-01,1
+"42772","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2682644,1248514,"Monday","13h-14h",2020-01-01,1
+"42773","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2682647,1248509,"Monday","14h-15h",2020-01-01,1
+"42774","Skidding or self-accident","Severe injuries",TRUE,FALSE,FALSE,"Minor road",2684660,1248183,"Monday","14h-15h",2020-01-01,1
+"42775","Rear-end collision","Property damage",FALSE,FALSE,TRUE,"Minor road",2682789,1249059,"Monday","16h-17h",2020-01-01,1
+"42776","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2686460,1245904,"Monday","17h-18h",2020-01-01,1
+"42777","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2685708,1251356,"Monday","18h-19h",2020-01-01,1
+"42778","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2682039,1247600,"Monday","18h-19h",2020-01-01,1
+"42779","Other","Property damage",FALSE,FALSE,FALSE,"Minor road",2686464,1245905,"Monday","20h-21h",2020-01-01,1
+"42780","Parking","Property damage",FALSE,FALSE,FALSE,"Other",2684784,1246941,"Tuesday","08h-09h",2020-01-01,1
+"42781","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2684716,1246992,"Tuesday","13h-14h",2020-01-01,1
+"42782","Parking","Property damage",FALSE,FALSE,FALSE,"Other",2681780,1250398,"Tuesday","14h-15h",2020-01-01,1
+"42783","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2684392,1246598,"Tuesday","17h-18h",2020-01-01,1
+"42784","Turning-into main road","Property damage",FALSE,TRUE,FALSE,"Minor road",2681415,1245902,"Tuesday","19h-20h",2020-01-01,1
+"42785","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2679916,1247745,"Tuesday","21h-22h",2020-01-01,1
+"42786","Head-on collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2680953,1249214,"Wednesday","01h-02h",2020-01-01,1
+"42787","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Motorway",2681962,1244822,"Wednesday","06h-07h",2020-01-01,1
+"42788","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2683094,1249153,"Wednesday","07h-08h",2020-01-01,1
+"42789","Rear-end collision","Property damage",FALSE,FALSE,TRUE,"Minor road",2683727,1247769,"Wednesday","08h-09h",2020-01-01,1
+"42790","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2686621,1250736,"Wednesday","12h-13h",2020-01-01,1
+"42791","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Principal road",2683798,1246222,"Wednesday","12h-13h",2020-01-01,1
+"42792","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Principal road",2683792,1246236,"Wednesday","13h-14h",2020-01-01,1
+"42793","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2680729,1246114,"Wednesday","14h-15h",2020-01-01,1
+"42794","Rear-end collision","Light injuries",FALSE,FALSE,FALSE,"Minor road",2683616,1247707,"Wednesday","14h-15h",2020-01-01,1
+"42795","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Other",2681878,1245958,"Wednesday","16h-17h",2020-01-01,1
+"42796",NA,"Property damage",FALSE,FALSE,FALSE,"Minor road",2684062,1245964,"Wednesday","17h-18h",2020-01-01,1
+"42797","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2683813,1248907,"Wednesday","19h-20h",2020-01-01,1
+"42798","Turning left or right","Property damage",FALSE,FALSE,FALSE,"Principal road",2683881,1251129,"Wednesday","19h-20h",2020-01-01,1
+"42799","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2684250,1246588,"Wednesday","19h-20h",2020-01-01,1
+"42800","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2684282,1251091,"Wednesday","20h-21h",2020-01-01,1
+"42801","Crossing the lane(s)","Property damage",FALSE,FALSE,FALSE,"Principal road",2680775,1248799,"Wednesday","22h-23h",2020-01-01,1
+"42802",NA,"Property damage",FALSE,FALSE,FALSE,"Principal road",2683851,1247187,"Wednesday","22h-23h",2020-01-01,1
+"42803","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2680421,1253162,"Wednesday","23h-00h",2020-01-01,1
+"42804","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Motorway",2680998,1253835,"Thursday","07h-08h",2020-01-01,1
+"42805","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Principal road",2684591,1246355,"Thursday","08h-09h",2020-01-01,1
+"42806","Accident involving pedestrian(s)","Severe injuries",FALSE,TRUE,FALSE,"Minor road",2682167,1248033,"Thursday","08h-09h",2020-01-01,1
+"42807","Turning left or right","Light injuries",FALSE,TRUE,FALSE,"Minor road",2682369,1247425,"Thursday","09h-10h",2020-01-01,1
+"42808","Skidding or self-accident","Property damage",FALSE,TRUE,FALSE,"Minor road",2682641,1247875,"Thursday","09h-10h",2020-01-01,1
+"42809","Parking","Light injuries",FALSE,FALSE,FALSE,"Minor road",2679823,1250756,"Thursday","09h-10h",2020-01-01,1
+"42810","Turning left or right","Property damage",FALSE,FALSE,FALSE,"Minor road",2679351,1249389,"Thursday","10h-11h",2020-01-01,1
+"42811","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2684214,1253498,"Thursday","12h-13h",2020-01-01,1
+"42812","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2686177,1251409,"Thursday","13h-14h",2020-01-01,1
+"42813","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2683236,1252078,"Thursday","14h-15h",2020-01-01,1
+"42814","Rear-end collision","Light injuries",FALSE,FALSE,FALSE,"Principal road",2683558,1250020,"Thursday","15h-16h",2020-01-01,1
+"42815","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Principal road",2683815,1252832,"Thursday","15h-16h",2020-01-01,1
+"42816","Skidding or self-accident","Light injuries",FALSE,FALSE,FALSE,"Motorway",2680273,1253506,"Thursday","15h-16h",2020-01-01,1
+"42817",NA,"Property damage",FALSE,FALSE,FALSE,"Minor road",2679797,1248147,"Thursday","15h-16h",2020-01-01,1
+"42818","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Principal road",2683525,1252193,"Thursday","16h-17h",2020-01-01,1
+"42819","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2683523,1247790,"Thursday","16h-17h",2020-01-01,1
+"42820","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Other",2678769,1249762,"Thursday","19h-20h",2020-01-01,1
+"42821","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2681085,1249363,"Thursday","20h-21h",2020-01-01,1
+"42822","Crossing the lane(s)","Property damage",FALSE,FALSE,FALSE,"Minor road",2682543,1248793,"Friday","03h-04h",2020-01-01,1
+"42823","Turning-into main road","Property damage",FALSE,FALSE,FALSE,"Minor road",2683813,1247270,"Friday","08h-09h",2020-01-01,1
+"42824",NA,"Property damage",FALSE,FALSE,FALSE,"Motorway",2681921,1243572,"Friday","08h-09h",2020-01-01,1
+"42825","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2682297,1247673,"Friday","08h-09h",2020-01-01,1
+"42826","Parking","Property damage",FALSE,FALSE,FALSE,"Other",2683539,1247594,"Friday","10h-11h",2020-01-01,1
+"42827","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2680377,1247955,"Friday","12h-13h",2020-01-01,1
+"42828","Turning left or right","Light injuries",FALSE,TRUE,FALSE,"Minor road",2680604,1248588,"Friday","13h-14h",2020-01-01,1
+"42829","Rear-end collision","Property damage",FALSE,FALSE,TRUE,"Minor road",2680851,1247994,"Friday","14h-15h",2020-01-01,1
+"42830","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Principal road",2682793,1244767,"Friday","15h-16h",2020-01-01,1
+"42831","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2680744,1245674,"Friday","16h-17h",2020-01-01,1
+"42832","Skidding or self-accident","Light injuries",FALSE,TRUE,FALSE,"Minor road",2681379,1248472,"Saturday","00h-01h",2020-01-01,1
+"42833","Turning left or right","Property damage",FALSE,FALSE,FALSE,"Minor road",2682121,1247081,"Saturday","00h-01h",2020-01-01,1
+"42834","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2682356,1247936,"Saturday","07h-08h",2020-01-01,1
+"42835","Turning left or right","Property damage",FALSE,TRUE,FALSE,"Principal road",2682084,1247033,"Saturday","08h-09h",2020-01-01,1
+"42836","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2683319,1251552,"Saturday","10h-11h",2020-01-01,1
+"42837","Turning-into main road","Light injuries",FALSE,FALSE,TRUE,"Minor road",2679992,1247867,"Saturday","11h-12h",2020-01-01,1
+"42838","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2683287,1246870,"Saturday","15h-16h",2020-01-01,1
+"42839","Parking","Property damage",FALSE,FALSE,FALSE,"Other",2683149,1251933,"Saturday","17h-18h",2020-01-01,1
+"42840","Parking","Property damage",FALSE,FALSE,FALSE,"Other",2679254,1248705,"Saturday","18h-19h",2020-01-01,1
+"42841",NA,"Property damage",FALSE,FALSE,FALSE,"Minor road",2682896,1247311,"Saturday","23h-00h",2020-01-01,1
+"42842",NA,"Property damage",FALSE,FALSE,FALSE,"Principal road",2683853,1247180,"Sunday","00h-01h",2020-01-01,1
+"42843","Turning left or right","Property damage",FALSE,FALSE,FALSE,"Minor road",2682098,1248326,"Sunday","05h-06h",2020-01-01,1
+"42844","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2683192,1247960,"Sunday","05h-06h",2020-01-01,1
+"42845","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2682609,1248031,"Sunday","12h-13h",2020-01-01,1
+"42846","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2685215,1246707,"Sunday","12h-13h",2020-01-01,1
+"42847","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Other",2679806,1249226,"Sunday","12h-13h",2020-01-01,1
+"42848","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Principal road",2681947,1246836,"Sunday","14h-15h",2020-01-01,1
+"42849","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2684555,1251176,"Sunday","15h-16h",2020-01-01,1
+"42850","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2683085,1248163,"Sunday","15h-16h",2020-01-01,1
+"42851","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2682800,1249019,"Sunday","17h-18h",2020-01-01,1
+"42852","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2685621,1248395,"Monday","08h-09h",2020-01-01,1
+"42853","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2683883,1246295,"Monday","08h-09h",2020-01-01,1
+"42854",NA,"Property damage",FALSE,FALSE,FALSE,"Principal road",2682085,1247041,"Monday","09h-10h",2020-01-01,1
+"42855","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2681606,1246323,"Monday","09h-10h",2020-01-01,1
+"42856","Turning left or right","Light injuries",FALSE,FALSE,FALSE,"Minor road",2682980,1248212,"Monday","10h-11h",2020-01-01,1
+"42857",NA,"Property damage",FALSE,FALSE,FALSE,"Minor road",2683769,1246600,"Monday","12h-13h",2020-01-01,1
+"42858","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2682946,1246959,"Monday","13h-14h",2020-01-01,1
+"42859","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2681656,1248055,"Monday","13h-14h",2020-01-01,1
+"42860","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Motorway",2681785,1244068,"Monday","15h-16h",2020-01-01,1
+"42861","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2682085,1247323,"Monday","16h-17h",2020-01-01,1
+"42862","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2684756,1246704,"Monday","16h-17h",2020-01-01,1
+"42863","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2684774,1246372,"Monday","16h-17h",2020-01-01,1
+"42864","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Principal road",2682120,1247072,"Monday","17h-18h",2020-01-01,1
+"42865","Rear-end collision","Light injuries",FALSE,FALSE,FALSE,"Principal road",2685496,1250933,"Monday","17h-18h",2020-01-01,1
+"42866","Skidding or self-accident","Light injuries",FALSE,TRUE,FALSE,"Minor road",2683711,1253061,"Monday","18h-19h",2020-01-01,1
+"42867","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2681449,1248857,"Monday","19h-20h",2020-01-01,1
+"42868","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2683438,1252203,"Tuesday","06h-07h",2020-01-01,1
+"42869","Skidding or self-accident","Light injuries",FALSE,TRUE,FALSE,"Minor road",2684444,1247173,"Tuesday","07h-08h",2020-01-01,1
+"42870",NA,"Property damage",FALSE,FALSE,FALSE,"Minor road",2681422,1242772,"Tuesday","09h-10h",2020-01-01,1
+"42871","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2684697,1247788,"Tuesday","10h-11h",2020-01-01,1
+"42872","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2684978,1246378,"Tuesday","10h-11h",2020-01-01,1
+"42873","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2683950,1246420,"Tuesday","11h-12h",2020-01-01,1
+"42874",NA,"Property damage",FALSE,FALSE,FALSE,"Minor road",2679131,1249097,"Tuesday","11h-12h",2020-01-01,1
+"42875","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2684155,1251169,"Tuesday","12h-13h",2020-01-01,1
+"42876",NA,"Property damage",FALSE,FALSE,FALSE,"Principal road",2683850,1247181,"Tuesday","13h-14h",2020-01-01,1
+"42877","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Principal road",2680711,1250706,"Tuesday","16h-17h",2020-01-01,1
+"42878","Turning-into main road","Light injuries",FALSE,FALSE,FALSE,"Minor road",2682995,1251535,"Tuesday","18h-19h",2020-01-01,1
+"42879",NA,"Property damage",FALSE,FALSE,FALSE,"Principal road",2683887,1251504,"Tuesday","18h-19h",2020-01-01,1
+"42880","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2682289,1248018,"Tuesday","18h-19h",2020-01-01,1
+"42881","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2682309,1248174,"Tuesday","19h-20h",2020-01-01,1
+"42882","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2683559,1250747,"Tuesday","19h-20h",2020-01-01,1
+"42883","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2683102,1247902,"Tuesday","20h-21h",2020-01-01,1
+"42884","Head-on collision","Property damage",FALSE,FALSE,FALSE,"Principal road",2684060,1245682,"Tuesday","20h-21h",2020-01-01,1
+"42885","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2682128,1248062,"Tuesday","21h-22h",2020-01-01,1
+"42886","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2682951,1246945,"Tuesday","21h-22h",2020-01-01,1
+"42887","Turning left or right","Property damage",FALSE,FALSE,FALSE,"Minor road",2685191,1246590,"Wednesday","08h-09h",2020-01-01,1
+"42888","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2684587,1245376,"Wednesday","08h-09h",2020-01-01,1
+"42889","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2681916,1249630,"Wednesday","10h-11h",2020-01-01,1
+"42890","Turning-into main road","Property damage",FALSE,FALSE,FALSE,"Principal road",2681540,1248966,"Wednesday","10h-11h",2020-01-01,1
+"42891","Turning-into main road","Property damage",FALSE,FALSE,FALSE,"Principal road",2682071,1249905,"Wednesday","11h-12h",2020-01-01,1
+"42892",NA,"Property damage",FALSE,FALSE,FALSE,"Principal road",2683574,1246734,"Wednesday","12h-13h",2020-01-01,1
+"42893","Parking","Property damage",FALSE,FALSE,FALSE,"Other",2686772,1245913,"Wednesday","15h-16h",2020-01-01,1
+"42894","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2684585,1245747,"Wednesday","15h-16h",2020-01-01,1
+"42895","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Principal road",2683328,1250439,"Wednesday","15h-16h",2020-01-01,1
+"42896","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Motorway",2684948,1251185,"Wednesday","16h-17h",2020-01-01,1
+"42897","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2683076,1249744,"Wednesday","17h-18h",2020-01-01,1
+"42898","Turning-into main road","Light injuries",FALSE,FALSE,TRUE,"Minor road",2681693,1246790,"Wednesday","18h-19h",2020-01-01,1
+"42899","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2685207,1251772,"Wednesday","18h-19h",2020-01-01,1
+"42900",NA,"Light injuries",FALSE,TRUE,FALSE,"Minor road",2682377,1247449,"Wednesday","19h-20h",2020-01-01,1
+"42901",NA,"Property damage",FALSE,FALSE,FALSE,"Principal road",2682770,1245149,"Wednesday","21h-22h",2020-01-01,1
+"42902","Parking","Property damage",FALSE,FALSE,FALSE,"Other",2680946,1249566,"Thursday","08h-09h",2020-01-01,1
+"42903","Turning-into main road","Property damage",FALSE,FALSE,FALSE,"Minor road",2684555,1245427,"Thursday","08h-09h",2020-01-01,1
+"42904","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Principal road",2685560,1251707,"Thursday","08h-09h",2020-01-01,1
+"42905","Skidding or self-accident","Severe injuries",FALSE,TRUE,FALSE,"Minor road",2684851,1246060,"Thursday","08h-09h",2020-01-01,1
+"42906","Accident involving pedestrian(s)","Severe injuries",TRUE,TRUE,FALSE,"Minor road",2686088,1250676,"Thursday","12h-13h",2020-01-01,1
+"42907","Rear-end collision","Light injuries",FALSE,FALSE,FALSE,"Principal road",2682212,1249279,"Thursday","12h-13h",2020-01-01,1
+"42908","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2679539,1248372,"Thursday","12h-13h",2020-01-01,1
+"42909","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2679491,1247320,"Thursday","12h-13h",2020-01-01,1
+"42910","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2681940,1247039,"Thursday","12h-13h",2020-01-01,1
+"42911","Rear-end collision","Light injuries",FALSE,FALSE,FALSE,"Minor road",2679456,1249128,"Thursday","13h-14h",2020-01-01,1
+"42912","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2683330,1247083,"Thursday","13h-14h",2020-01-01,1
+"42913","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2682332,1247985,"Thursday","13h-14h",2020-01-01,1
+"42914","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2682546,1248085,"Thursday","14h-15h",2020-01-01,1
+"42915","Rear-end collision","Light injuries",FALSE,FALSE,FALSE,"Motorway",2680825,1253748,"Thursday","14h-15h",2020-01-01,1
+"42916","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Principal road",2683783,1248325,"Thursday","14h-15h",2020-01-01,1
+"42917",NA,"Property damage",FALSE,FALSE,FALSE,"Motorway",2683370,1254107,"Thursday","14h-15h",2020-01-01,1
+"42918","Turning-into main road","Property damage",FALSE,FALSE,FALSE,"Principal road",2682791,1250756,"Thursday","15h-16h",2020-01-01,1
+"42919","Accident involving pedestrian(s)","Severe injuries",TRUE,FALSE,FALSE,"Minor road",2680429,1250560,"Thursday","17h-18h",2020-01-01,1
+"42920","Rear-end collision","Light injuries",FALSE,FALSE,FALSE,"Motorway",2685511,1251766,"Thursday","17h-18h",2020-01-01,1
+"42921","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2683533,1247594,"Thursday","19h-20h",2020-01-01,1
+"42922","Turning-into main road","Property damage",FALSE,FALSE,FALSE,"Minor road",2678917,1247865,"Friday","07h-08h",2020-01-01,1
+"42923","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2681628,1247679,"Friday","08h-09h",2020-01-01,1
+"42924","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2683596,1253499,"Friday","10h-11h",2020-01-01,1
+"42925","Turning left or right","Light injuries",FALSE,FALSE,FALSE,"Principal road",2685183,1246106,"Friday","10h-11h",2020-01-01,1
+"42926","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Principal road",2685231,1246107,"Friday","11h-12h",2020-01-01,1
+"42927","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2685017,1250991,"Friday","14h-15h",2020-01-01,1
+"42928",NA,"Property damage",FALSE,FALSE,FALSE,"Motorway",2681743,1244624,"Friday","14h-15h",2020-01-01,1
+"42929",NA,"Property damage",FALSE,FALSE,FALSE,"Minor road",2680495,1251033,"Friday","16h-17h",2020-01-01,1
+"42930","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2681220,1247593,"Friday","18h-19h",2020-01-01,1
+"42931","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Principal road",2681581,1247674,"Friday","18h-19h",2020-01-01,1
+"42932",NA,"Property damage",FALSE,FALSE,FALSE,"Minor road",2683590,1246771,"Friday","20h-21h",2020-01-01,1
+"42933","Accident involving pedestrian(s)","Light injuries",TRUE,FALSE,FALSE,"Minor road",2684499,1245912,"Friday","21h-22h",2020-01-01,1
+"42934","Turning-into main road","Light injuries",FALSE,TRUE,FALSE,"Minor road",2681693,1246790,"Saturday","03h-04h",2020-01-01,1
+"42935","Turning left or right","Light injuries",FALSE,FALSE,FALSE,"Minor road",2682905,1246818,"Saturday","08h-09h",2020-01-01,1
+"42936","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2681506,1247206,"Saturday","10h-11h",2020-01-01,1
+"42937","Head-on collision","Light injuries",FALSE,TRUE,FALSE,"Minor road",2681768,1249310,"Saturday","10h-11h",2020-01-01,1
+"42938",NA,"Property damage",FALSE,FALSE,FALSE,"Principal road",2683852,1247187,"Saturday","11h-12h",2020-01-01,1
+"42939","Turning left or right","Property damage",FALSE,FALSE,FALSE,"Principal road",2683160,1251547,"Saturday","11h-12h",2020-01-01,1
+"42940","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2683212,1248574,"Saturday","12h-13h",2020-01-01,1
+"42941","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Principal road",2679515,1249329,"Saturday","12h-13h",2020-01-01,1
+"42942","Parking","Property damage",FALSE,FALSE,FALSE,"Principal road",2681951,1251837,"Saturday","12h-13h",2020-01-01,1
+"42943",NA,"Property damage",FALSE,FALSE,FALSE,"Minor road",2680402,1247544,"Saturday","13h-14h",2020-01-01,1
+"42944","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2680157,1247423,"Saturday","14h-15h",2020-01-01,1
+"42945","Other","Severe injuries",FALSE,FALSE,FALSE,"Minor road",2683386,1248318,"Saturday","14h-15h",2020-01-01,1
+"42946","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2682448,1248852,"Saturday","15h-16h",2020-01-01,1
+"42947","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2680916,1247835,"Saturday","16h-17h",2020-01-01,1
+"42948","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2679366,1247320,"Saturday","18h-19h",2020-01-01,1
+"42949","Turning-into main road","Light injuries",FALSE,TRUE,FALSE,"Minor road",2680602,1248591,"Saturday","19h-20h",2020-01-01,1
+"42950","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2683712,1251510,"Saturday","20h-21h",2020-01-01,1
+"42951","Turning left or right","Light injuries",FALSE,FALSE,FALSE,"Principal road",2679616,1253306,"Saturday","20h-21h",2020-01-01,1
+"42952","Skidding or self-accident","Severe injuries",FALSE,TRUE,FALSE,"Minor road",2685984,1251428,"Sunday","01h-02h",2020-01-01,1
+"42953","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2681732,1249956,"Sunday","09h-10h",2020-01-01,1
+"42954","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2681728,1245798,"Sunday","13h-14h",2020-01-01,1
+"42955","Parking","Property damage",FALSE,FALSE,FALSE,"Other",2681749,1250413,"Sunday","16h-17h",2020-01-01,1
+"42956",NA,"Property damage",FALSE,FALSE,FALSE,"Minor road",2680268,1246973,"Sunday","17h-18h",2020-01-01,1
+"42957","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2681526,1245850,"Sunday","17h-18h",2020-01-01,1
+"42958","Skidding or self-accident","Light injuries",TRUE,FALSE,TRUE,"Principal road",2682641,1250226,"Sunday","20h-21h",2020-01-01,1
+"42959","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Other",2679994,1252973,"Sunday","22h-23h",2020-01-01,1
+"42960",NA,"Property damage",FALSE,FALSE,FALSE,"Principal road",2679194,1249037,"Sunday","22h-23h",2020-01-01,1
+"42961","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2678640,1249791,"Monday","07h-08h",2020-01-01,1
+"42962","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2683212,1246931,"Monday","10h-11h",2020-01-01,1
+"42963","Crossing the lane(s)","Property damage",FALSE,FALSE,FALSE,"Principal road",2684413,1251025,"Monday","12h-13h",2020-01-01,1
+"42964","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2680959,1246312,"Monday","14h-15h",2020-01-01,1
+"42965","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Principal road",2683812,1252809,"Monday","14h-15h",2020-01-01,1
+"42966",NA,"Property damage",FALSE,FALSE,FALSE,"Principal road",2683851,1247187,"Monday","14h-15h",2020-01-01,1
+"42967",NA,"Property damage",FALSE,FALSE,FALSE,"Minor road",2681887,1249544,"Monday","14h-15h",2020-01-01,1
+"42968","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Principal road",2686301,1250701,"Monday","14h-15h",2020-01-01,1
+"42969","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Other",2679042,1249946,"Monday","14h-15h",2020-01-01,1
+"42970","Parking","Property damage",FALSE,FALSE,FALSE,"Other",2683516,1251696,"Monday","15h-16h",2020-01-01,1
+"42971","Parking","Property damage",FALSE,FALSE,FALSE,"Principal road",2681969,1246928,"Monday","17h-18h",2020-01-01,1
+"42972","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Motorway",2684543,1250971,"Tuesday","06h-07h",2020-01-01,1
+"42973",NA,"Property damage",FALSE,FALSE,FALSE,"Minor road",2683159,1248637,"Tuesday","06h-07h",2020-01-01,1
+"42974","Rear-end collision","Property damage",FALSE,TRUE,FALSE,"Minor road",2680933,1248022,"Tuesday","06h-07h",2020-01-01,1
+"42975","Turning-into main road","Light injuries",FALSE,TRUE,FALSE,"Minor road",2681525,1246368,"Tuesday","08h-09h",2020-01-01,1
+"42976","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2682734,1247350,"Tuesday","09h-10h",2020-01-01,1
+"42977",NA,"Property damage",FALSE,FALSE,FALSE,"Principal road",2685175,1246584,"Tuesday","09h-10h",2020-01-01,1
+"42978","Skidding or self-accident","Light injuries",FALSE,FALSE,TRUE,"Minor road",2683135,1249460,"Tuesday","10h-11h",2020-01-01,1
+"42979","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2681046,1247970,"Tuesday","11h-12h",2020-01-01,1
+"42980","Crossing the lane(s)","Property damage",FALSE,FALSE,FALSE,"Principal road",2683713,1250457,"Tuesday","12h-13h",2020-01-01,1
+"42981","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2683343,1248199,"Tuesday","12h-13h",2020-01-01,1
+"42982","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2683741,1246506,"Tuesday","14h-15h",2020-01-01,1
+"42983",NA,"Property damage",FALSE,FALSE,FALSE,"Principal road",2681041,1249309,"Tuesday","14h-15h",2020-01-01,1
+"42984","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2683642,1247661,"Tuesday","15h-16h",2020-01-01,1
+"42985","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Principal road",2677687,1247042,"Tuesday","16h-17h",2020-01-01,1
+"42986","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Principal road",2681237,1247178,"Tuesday","17h-18h",2020-01-01,1
+"42987","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2682315,1248370,"Tuesday","17h-18h",2020-01-01,1
+"42988","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2680433,1248799,"Tuesday","17h-18h",2020-01-01,1
+"42989","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2680452,1247497,"Tuesday","18h-19h",2020-01-01,1
+"42990",NA,"Property damage",FALSE,FALSE,FALSE,"Minor road",2679825,1248125,"Tuesday","19h-20h",2020-01-01,1
+"42991","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2685639,1245305,"Wednesday","07h-08h",2020-01-01,1
+"42992","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Principal road",2682964,1250310,"Wednesday","09h-10h",2020-01-01,1
+"42993","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2681721,1245593,"Wednesday","10h-11h",2020-01-01,1
+"42994","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2682803,1247375,"Wednesday","10h-11h",2020-01-01,1
+"42995","Crossing the lane(s)","Property damage",FALSE,FALSE,FALSE,"Minor road",2685549,1248466,"Wednesday","11h-12h",2020-01-01,1
+"42996",NA,"Property damage",FALSE,FALSE,FALSE,"Minor road",2684676,1247590,"Wednesday","11h-12h",2020-01-01,1
+"42997","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2682784,1251132,"Wednesday","11h-12h",2020-01-01,1
+"42998","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2683525,1247741,"Wednesday","14h-15h",2020-01-01,1
+"42999","Accident involving pedestrian(s)","Light injuries",TRUE,FALSE,FALSE,"Minor road",2683068,1249545,"Wednesday","15h-16h",2020-01-01,1
+"43000","Rear-end collision","Light injuries",FALSE,TRUE,FALSE,"Principal road",2683791,1248312,"Wednesday","16h-17h",2020-01-01,1
+"43001","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2682871,1245586,"Wednesday","16h-17h",2020-01-01,1
+"43002","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2679807,1248475,"Wednesday","17h-18h",2020-01-01,1
+"43003","Rear-end collision","Light injuries",FALSE,FALSE,FALSE,"Principal road",2680821,1247099,"Wednesday","17h-18h",2020-01-01,1
+"43004","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2683123,1246662,"Wednesday","17h-18h",2020-01-01,1
+"43005","Parking","Property damage",FALSE,FALSE,FALSE,"Principal road",2684886,1244859,"Wednesday","18h-19h",2020-01-01,1
+"43006","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Principal road",2682815,1247575,"Thursday","03h-04h",2020-01-01,1
+"43007","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2682569,1248919,"Thursday","05h-06h",2020-01-01,1
+"43008",NA,"Property damage",FALSE,FALSE,FALSE,"Motorway",2679621,1253327,"Thursday","07h-08h",2020-01-01,1
+"43009","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2682892,1246679,"Thursday","07h-08h",2020-01-01,1
+"43010","Crossing the lane(s)","Property damage",FALSE,TRUE,FALSE,"Minor road",2684118,1247158,"Thursday","08h-09h",2020-01-01,1
+"43011",NA,"Property damage",FALSE,FALSE,FALSE,"Minor road",2682813,1247469,"Thursday","09h-10h",2020-01-01,1
+"43012","Accident involving animal(s)","Property damage",FALSE,FALSE,FALSE,"Principal road",2681637,1251994,"Thursday","09h-10h",2020-01-01,1
+"43013",NA,"Property damage",FALSE,FALSE,FALSE,"Principal road",2682690,1250248,"Thursday","10h-11h",2020-01-01,1
+"43014","Turning-into main road","Property damage",FALSE,FALSE,FALSE,"Principal road",2682145,1247087,"Thursday","11h-12h",2020-01-01,1
+"43015","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2683469,1251689,"Thursday","15h-16h",2020-01-01,1
+"43016","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2681643,1252087,"Thursday","15h-16h",2020-01-01,1
+"43017","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2680551,1245114,"Thursday","17h-18h",2020-01-01,1
+"43018","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Motorway",2685241,1251500,"Thursday","17h-18h",2020-01-01,1
+"43019","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2683620,1252353,"Thursday","18h-19h",2020-01-01,1
+"43020","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Motorway",2685302,1251579,"Thursday","18h-19h",2020-01-01,1
+"43021","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2684390,1247095,"Thursday","18h-19h",2020-01-01,1
+"43022","Turning left or right","Property damage",FALSE,FALSE,FALSE,"Principal road",2683624,1251449,"Thursday","18h-19h",2020-01-01,1
+"43023","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Principal road",2681288,1253931,"Thursday","21h-22h",2020-01-01,1
+"43024","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2681024,1246205,"Friday","07h-08h",2020-01-01,1
+"43025","Turning left or right","Light injuries",FALSE,TRUE,FALSE,"Minor road",2683330,1246798,"Friday","07h-08h",2020-01-01,1
+"43026","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2682666,1252068,"Friday","07h-08h",2020-01-01,1
+"43027","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2682937,1247907,"Friday","08h-09h",2020-01-01,1
+"43028","Rear-end collision","Light injuries",FALSE,TRUE,FALSE,"Principal road",2684797,1246859,"Friday","08h-09h",2020-01-01,1
+"43029","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Principal road",2683851,1247160,"Friday","09h-10h",2020-01-01,1
+"43030","Skidding or self-accident","Light injuries",FALSE,TRUE,FALSE,"Minor road",2680862,1248081,"Friday","12h-13h",2020-01-01,1
+"43031","Parking","Property damage",FALSE,FALSE,FALSE,"Other",2682861,1247403,"Friday","13h-14h",2020-01-01,1
+"43032","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2682444,1249727,"Friday","13h-14h",2020-01-01,1
+"43033","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2683294,1253625,"Friday","14h-15h",2020-01-01,1
+"43034",NA,"Property damage",FALSE,FALSE,FALSE,"Minor road",2682669,1250211,"Friday","14h-15h",2020-01-01,1
+"43035","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2682096,1243368,"Friday","15h-16h",2020-01-01,1
+"43036","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2682648,1243631,"Friday","16h-17h",2020-01-01,1
+"43037","Parking","Property damage",FALSE,FALSE,FALSE,"Other",2684790,1251769,"Friday","18h-19h",2020-01-01,1
+"43038","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2679327,1248686,"Friday","18h-19h",2020-01-01,1
+"43039","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2679468,1249179,"Friday","18h-19h",2020-01-01,1
+"43040","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2682490,1246388,"Friday","19h-20h",2020-01-01,1
+"43041","Rear-end collision","Light injuries",FALSE,FALSE,FALSE,"Principal road",2686958,1251191,"Friday","23h-00h",2020-01-01,1
+"43042","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Principal road",2686955,1251199,"Friday","23h-00h",2020-01-01,1
+"43043","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2681693,1247272,"Saturday","00h-01h",2020-01-01,1
+"43044","Parking","Property damage",FALSE,FALSE,FALSE,"Other",2683795,1247038,"Saturday","01h-02h",2020-01-01,1
+"43045","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Principal road",2684149,1253366,"Saturday","09h-10h",2020-01-01,1
+"43046","Parking","Property damage",FALSE,FALSE,FALSE,"Principal road",2682321,1249149,"Saturday","13h-14h",2020-01-01,1
+"43047","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Expressway",2683498,1249696,"Saturday","14h-15h",2020-01-01,1
+"43048","Turning-into main road","Property damage",FALSE,FALSE,FALSE,"Minor road",2683172,1247662,"Saturday","14h-15h",2020-01-01,1
+"43049","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2682906,1247802,"Saturday","14h-15h",2020-01-01,1
+"43050",NA,"Property damage",FALSE,FALSE,FALSE,"Principal road",2686646,1251337,"Saturday","16h-17h",2020-01-01,1
+"43051","Skidding or self-accident","Light injuries",FALSE,FALSE,FALSE,"Minor road",2681195,1250359,"Saturday","17h-18h",2020-01-01,1
+"43052","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Principal road",2681987,1249721,"Saturday","22h-23h",2020-01-01,1
+"43053","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2682757,1247559,"Sunday","03h-04h",2020-01-01,1
+"43054","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2682412,1248574,"Sunday","05h-06h",2020-01-01,1
+"43055","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2684654,1247805,"Sunday","08h-09h",2020-01-01,1
+"43056","Turning-into main road","Property damage",FALSE,FALSE,FALSE,"Minor road",2684978,1247794,"Sunday","09h-10h",2020-01-01,1
+"43057","Turning left or right","Property damage",FALSE,FALSE,FALSE,"Minor road",2681911,1247948,"Sunday","10h-11h",2020-01-01,1
+"43058",NA,"Property damage",FALSE,FALSE,FALSE,"Minor road",2682490,1247187,"Sunday","11h-12h",2020-01-01,1
+"43059","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Principal road",2683360,1250424,"Sunday","12h-13h",2020-01-01,1
+"43060","Accident involving pedestrian(s)","Light injuries",TRUE,FALSE,FALSE,"Minor road",2682509,1248782,"Sunday","13h-14h",2020-01-01,1
+"43061","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2684375,1248281,"Sunday","16h-17h",2020-01-01,1
+"43062",NA,"Property damage",FALSE,FALSE,FALSE,"Motorway",2681495,1244267,"Sunday","16h-17h",2020-01-01,1
+"43063",NA,"Property damage",FALSE,FALSE,FALSE,"Minor road",2681490,1249572,"Sunday","19h-20h",2020-01-01,1
+"43064","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2682932,1247794,"Sunday","20h-21h",2020-01-01,1
+"43065","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2682731,1247600,"Monday","05h-06h",2020-01-01,1
+"43066","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2680490,1248673,"Monday","08h-09h",2020-01-01,1
+"43067","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Principal road",2684668,1246310,"Monday","09h-10h",2020-01-01,1
+"43068","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2682564,1244482,"Monday","10h-11h",2020-01-01,1
+"43069",NA,"Property damage",FALSE,FALSE,FALSE,"Principal road",2684592,1245190,"Monday","11h-12h",2020-01-01,1
+"43070","Skidding or self-accident","Light injuries",FALSE,TRUE,FALSE,"Minor road",2684708,1252075,"Monday","12h-13h",2020-01-01,1
+"43071","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2682708,1249871,"Monday","13h-14h",2020-01-01,1
+"43072","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2682938,1248333,"Monday","13h-14h",2020-01-01,1
+"43073",NA,"Property damage",FALSE,FALSE,FALSE,"Minor road",2682857,1247826,"Monday","15h-16h",2020-01-01,1
+"43074","Accident involving pedestrian(s)","Severe injuries",TRUE,FALSE,FALSE,"Minor road",2683628,1253020,"Monday","15h-16h",2020-01-01,1
+"43075","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2680626,1246157,"Monday","16h-17h",2020-01-01,1
+"43076","Crossing the lane(s)","Light injuries",FALSE,TRUE,FALSE,"Principal road",2681803,1246619,"Monday","20h-21h",2020-01-01,1
+"43077","Accident involving animal(s)","Property damage",FALSE,FALSE,FALSE,"Motorway",2685172,1251434,"Tuesday","06h-07h",2020-01-01,1
+"43078","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2682982,1246735,"Tuesday","07h-08h",2020-01-01,1
+"43079","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2682842,1247126,"Tuesday","07h-08h",2020-01-01,1
+"43080","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2682436,1247304,"Tuesday","07h-08h",2020-01-01,1
+"43081","Rear-end collision","Light injuries",FALSE,FALSE,FALSE,"Principal road",2682913,1250585,"Tuesday","07h-08h",2020-01-01,1
+"43082","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2682555,1244345,"Tuesday","09h-10h",2020-01-01,1
+"43083","Turning left or right","Property damage",FALSE,TRUE,FALSE,"Minor road",2681621,1246332,"Tuesday","13h-14h",2020-01-01,1
+"43084","Turning left or right","Light injuries",FALSE,FALSE,FALSE,"Principal road",2683851,1252874,"Tuesday","16h-17h",2020-01-01,1
+"43085","Skidding or self-accident","Light injuries",FALSE,TRUE,FALSE,"Minor road",2683472,1248321,"Tuesday","17h-18h",2020-01-01,1
+"43086","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Principal road",2682479,1250173,"Tuesday","19h-20h",2020-01-01,1
+"43087",NA,"Property damage",FALSE,FALSE,FALSE,"Principal road",2683672,1250519,"Tuesday","19h-20h",2020-01-01,1
+"43088","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2683126,1252367,"Tuesday","19h-20h",2020-01-01,1
+"43089","Skidding or self-accident","Light injuries",FALSE,FALSE,TRUE,"Minor road",2683423,1248650,"Wednesday","09h-10h",2020-01-01,1
+"43090","Turning left or right","Light injuries",FALSE,FALSE,FALSE,"Minor road",2684536,1251713,"Wednesday","11h-12h",2020-01-01,1
+"43091","Turning-into main road","Light injuries",FALSE,FALSE,TRUE,"Minor road",2679669,1248262,"Wednesday","11h-12h",2020-01-01,1
+"43092","Skidding or self-accident","Light injuries",FALSE,TRUE,FALSE,"Minor road",2681472,1246132,"Wednesday","11h-12h",2020-01-01,1
+"43093","Parking","Property damage",FALSE,FALSE,FALSE,"Principal road",2681985,1247230,"Wednesday","14h-15h",2020-01-01,1
+"43094","Rear-end collision","Light injuries",FALSE,FALSE,FALSE,"Principal road",2680751,1252475,"Wednesday","14h-15h",2020-01-01,1
+"43095","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2687831,1246160,"Wednesday","14h-15h",2020-01-01,1
+"43096","Other","Light injuries",FALSE,FALSE,FALSE,"Other",2683552,1246850,"Wednesday","15h-16h",2020-01-01,1
+"43097","Skidding or self-accident","Light injuries",FALSE,FALSE,FALSE,"Motorway",2684242,1250832,"Wednesday","15h-16h",2020-01-01,1
+"43098",NA,"Property damage",FALSE,FALSE,FALSE,"Motorway",2683413,1254090,"Wednesday","15h-16h",2020-01-01,1
+"43099","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2679485,1249244,"Wednesday","16h-17h",2020-01-01,1
+"43100",NA,"Property damage",FALSE,FALSE,FALSE,"Motorway",2684037,1253766,"Wednesday","17h-18h",2020-01-01,1
+"43101","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2680759,1248150,"Wednesday","17h-18h",2020-01-01,1
+"43102","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2681603,1249026,"Wednesday","17h-18h",2020-01-01,1
+"43103","Rear-end collision","Light injuries",FALSE,TRUE,FALSE,"Minor road",2682964,1249529,"Wednesday","18h-19h",2020-01-01,1
+"43104",NA,"Property damage",FALSE,FALSE,FALSE,"Principal road",2680497,1252625,"Wednesday","18h-19h",2020-01-01,1
+"43105","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2684529,1252268,"Wednesday","19h-20h",2020-01-01,1
+"43106","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2684251,1247073,"Wednesday","19h-20h",2020-01-01,1
+"43107","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2682828,1247938,"Wednesday","20h-21h",2020-01-01,1
+"43108","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2681714,1243735,"Thursday","00h-01h",2020-01-01,1
+"43109","Accident involving pedestrian(s)","Severe injuries",TRUE,FALSE,FALSE,"Minor road",2683317,1247821,"Thursday","06h-07h",2020-01-01,1
+"43110","Parking","Property damage",FALSE,FALSE,FALSE,"Other",2683748,1247867,"Thursday","07h-08h",2020-01-01,1
+"43111","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2681719,1244000,"Thursday","08h-09h",2020-01-01,1
+"43112","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2681713,1243705,"Thursday","08h-09h",2020-01-01,1
+"43113","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2682658,1248403,"Thursday","09h-10h",2020-01-01,1
+"43114","Crossing the lane(s)","Light injuries",FALSE,TRUE,FALSE,"Minor road",2680400,1248396,"Thursday","09h-10h",2020-01-01,1
+"43115","Accident involving pedestrian(s)","Light injuries",TRUE,FALSE,FALSE,"Minor road",2684044,1246211,"Thursday","10h-11h",2020-01-01,1
+"43116","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2683139,1249432,"Thursday","12h-13h",2020-01-01,1
+"43117","Other","Severe injuries",TRUE,FALSE,FALSE,"Minor road",2679358,1249433,"Thursday","15h-16h",2020-01-01,1
+"43118","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2680510,1246932,"Thursday","16h-17h",2020-01-01,1
+"43119","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2683207,1247952,"Thursday","17h-18h",2020-01-01,1
+"43120",NA,"Property damage",FALSE,FALSE,FALSE,"Motorway",2679570,1253303,"Thursday","17h-18h",2020-01-01,1
+"43121","Turning left or right","Property damage",FALSE,FALSE,FALSE,"Minor road",2681788,1247633,"Thursday","17h-18h",2020-01-01,1
+"43122","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Motorway",2679683,1253393,"Thursday","17h-18h",2020-01-01,1
+"43123","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2683585,1252030,"Thursday","18h-19h",2020-01-01,1
+"43124","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Principal road",2681564,1247701,"Thursday","18h-19h",2020-01-01,1
+"43125","Turning-into main road","Property damage",FALSE,FALSE,FALSE,"Minor road",2682273,1247701,"Thursday","18h-19h",2020-01-01,1
+"43126","Turning left or right","Light injuries",FALSE,FALSE,TRUE,"Minor road",2682677,1244629,"Thursday","19h-20h",2020-01-01,1
+"43127","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Minor road",2684705,1252134,"Thursday","19h-20h",2020-01-01,1
+"43128","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2682998,1249305,"Thursday","20h-21h",2020-01-01,1
+"43129","Skidding or self-accident","Property damage",FALSE,FALSE,FALSE,"Motorway",2682366,1242689,"Thursday","22h-23h",2020-01-01,1
+"43130","Rear-end collision","Light injuries",FALSE,FALSE,TRUE,"Principal road",2682305,1247597,"Friday","07h-08h",2020-01-01,1
+"43131","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2678901,1248236,"Friday","11h-12h",2020-01-01,1
+"43132","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2682916,1242825,"Friday","13h-14h",2020-01-01,1
+"43133","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2682406,1244718,"Friday","14h-15h",2020-01-01,1
+"43134","Skidding or self-accident","Light injuries",FALSE,TRUE,FALSE,"Minor road",2682625,1246430,"Friday","15h-16h",2020-01-01,1
+"43135","Turning left or right","Property damage",FALSE,FALSE,FALSE,"Minor road",2684114,1247151,"Friday","18h-19h",2020-01-01,1
+"43136","Rear-end collision","Property damage",FALSE,FALSE,FALSE,"Minor road",2683557,1252037,"Friday","19h-20h",2020-01-01,1
+"43137","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2684344,1250758,"Friday","23h-00h",2020-01-01,1
+"43138","Parking","Property damage",FALSE,FALSE,FALSE,"Minor road",2685578,1251434,"Friday","23h-00h",2020-01-01,1
