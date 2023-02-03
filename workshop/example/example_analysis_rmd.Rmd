@@ -163,3 +163,5 @@ run in, which, in the end, increases the reproducibility of the results.
 ```{r "sessionInfo"}
 sessionInfo()
 ```
+
+# References
