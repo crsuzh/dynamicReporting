@@ -78,9 +78,23 @@ After this slide:
 |-----------------|----------------------|-----------------|-----------------|
 | `knitr` (.Rnw)      | **R**                        | LaTeX                | pdf                |
 | `R Markdown` (.Rmd) | **R**                        | Markdown             | html, pdf, docx    |
-| `Quarto` (.qmd)     | **R**, **Python**, **Julia** | Markdown             | html, pdf, docx    |
+| `quarto` (.qmd)     | **R**, **Python**, **Julia** | Markdown             | html, pdf, docx    |
 
 ## Components of dynamic reports [header]
+
+<br>
+
+`knitr`
+
+```latex
+\documentclass[a4paper, 11pt]{article}
+\title{Analysis of traffic accidents in Zürich}
+\author{Felix Hofmann and Samuel Pawel}
+\date{\today}
+\begin{document}
+```
+
+`R Markdown`
 
 ```yaml
 ---
@@ -102,21 +116,77 @@ format: html
 
 ## Components of dynamic reports [text]
 
+<br>
+
 `knitr`
 
 ```latex
-This document shows the capabilities of \texttt{knitr} for dynamic reporting
-with \textsf{R}.
+\section{This is a section title}
+The \textbackslash textbf{} command renders a word \textbf{bold}. Lists can be done as follows:
+
+\begin{itemize}
+    \item element 1
+    \item element 2
+\end{itemize}
 ```
+
+<br>
+
+`R Markdown and quarto`
+
+```markdown
+# This is a title
+
+Two stars will render a word **bold**. We can also do lists:
+
+- item 1
+- item 2
+```
+
+## Components of dynamic reports [code chunks]
+
+<br>
+
+`knitr`
+
+```r
+<<>>=
+x <- seq(-3, 3, 0.01)
+plot(x, dnorm(x), type = "l")
+@
+```
+
+<br>
+
+`R Markdown` and `quarto`
+
+````markdown
+`r ''````{r}
+x <- seq(-3, 3, 0.01)
+plot(x, dnorm(x), type = "l")
+```
+````
+
+## Components of dynamic reports [Inline code]
+
+<br>
+
+`knitr`
+
+```latex
+This inline code renders as 8: \Sexpr{3 + 5}.
+```
+
+<br>
 
 `R Markdown and Quarto`
 
-```markdown
-This document shows the capabilities of `markdown` for dynamic reporting
-with `R`. The `markdown` markup language which
-is especially useful for mathematical typesetting.
+````markdown
+```{r echo=FALSE}
+#| results: asis
+paste("This inline chunk renders as 8:", "`r 3 + 5`", ".")
 ```
-
+````
 
 ## Which tool for whom?
 
