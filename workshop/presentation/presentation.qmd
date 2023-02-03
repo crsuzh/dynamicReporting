@@ -62,7 +62,9 @@ Goal 2: Learn about popular tools for dynamic reporting
 * (`Jupyter Notebooks`)
 
 :::{.notes}
-Felix' part
+Felix
+
+- Jupyter not really part of this workshop
 :::
 
 ## R Markdown 
@@ -87,6 +89,14 @@ Felix' part
 
 :::{.notes}
 Felix
+
+- Mixture code and text (analysis and description)
+- Composed of different parts (yaml header, markdown text, code chunks, inline code)
+   - Why is this useful?
+- Cross references (Figures, Tables, Chunks)
+- Bibliography
+- Different output formats for reports or slides (html, pdf, docx, pptx)
+- Maybe explain how this is compiled? (Probably too technical)
 :::
 <!-- ## Jupyter Notebooks
 
@@ -145,6 +155,10 @@ Felix
 
 :::{.notes}
 Felix
+
+- Same parts as R markdown (yaml header, markdown text, code chunks, inline code)
+- Slightly different syntax (Setting options, finer control over cross references)
+- Different output formats (reveal.js - presentation, observable.js - interactive)
 :::
 
 ## Which tool for whom?
