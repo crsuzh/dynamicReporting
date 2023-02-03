@@ -74,6 +74,7 @@ After this slide:
 
 <br> <br> <br>
 
+<<<<<<< HEAD
 |                     | Main programming language    | Main markup language | Main output format |
 |-----------------|----------------------|-----------------|-----------------|
 | `knitr` (.Rnw)      | **R**                        | LaTeX                | pdf                |
@@ -115,8 +116,6 @@ with `R`. The `markdown` markup language which
 is especially useful for mathematical typesetting.
 ```
 
-
-
 ## Which tool for whom?
 
 <br>
@@ -148,6 +147,14 @@ is especially useful for mathematical typesetting.
 1)  Download the data sets on **traffic accidents in Zurich** from <https://github.crsuzh/dynamicReporting/workshop/>.
 
 2)  Explore the data from the **2020** (file `accidents_2020.csv`) . Compute the number of accidents for each **weekday** and **month**. Make plots of the number of *accidents vs. weekday*, and the number of *accidents vs. month*. Create an HTML report using either `R Markdown` or `Quarto`.
+=======
+<br>
+
+1) Download the data sets on **traffic accidents in Zurich** from <https://github.crsuzh/dynamicReporting/workshop/>.
+
+2) Explore the data from the **2020** (file `accidents_2020.csv`) . 
+   Compute the number of accidents for each **weekday** and visualize your
+   results. Create an HTML report using either `R Markdown` or `Quarto`.
 
 3)  Now use the data from **2020** and **2021** (file `accidents_2021.csv`) and create an updated report.
 
@@ -158,6 +165,8 @@ Felix
 :::
 
 ## Backup: R Markdown
+
+<br>
 
 ![](rmarkdown.png){.absolute top="0%" right="0%" width="20%"}
 
@@ -200,7 +209,12 @@ Felix
 
 * **HTML**, **PDF** output formats (and more) -->
 ```
+=======
+
+
 ## Backup: knitr
+
+<br>
 
 ![](knitr.png){.absolute top="0%" right="0%" width="20%"}
 
@@ -221,6 +235,8 @@ Felix
 :::
 
 ## Backup: Quarto
+
+<br>
 
 ![](quarto.png){.absolute top="0%" right="0%" width="20%"}
 
@@ -247,13 +263,3 @@ Felix
 -   Slightly different syntax (Setting options, finer control over cross references)
 -   Different output formats (reveal.js - presentation, observable.js - interactive)
 :::
-
-## Backup: Code in Quarto Presentation
-
-```{r}
-#| echo: true
-#| fig-align: "center"
-print("Hello quarto")
-x <- seq(-3, 3, 0.01)
-plot(x, dnorm(x), type = "l")
-```
