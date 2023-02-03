@@ -38,10 +38,10 @@ Goal 2: Learn about popular tools for dynamic reporting
 :::: columns
 
 ::: column
-- tedious and error-prone
-- not directly reproducible
-- difficult to share/reuse
-- new data &rarr; need to repeat everything
+- Tedious and error-prone
+- Not directly reproducible
+- Difficult to share/reuse
+- New data &rarr; need to repeat everything
 :::
 
 ::: column
@@ -59,7 +59,6 @@ Goal 2: Learn about popular tools for dynamic reporting
 * `R Markdown`
 * `knitr`
 * `Quarto`
-* (`Jupyter Notebooks`)
 
 :::{.notes}
 Felix
@@ -67,109 +66,16 @@ Felix
 - Jupyter not really part of this workshop
 :::
 
-## R Markdown 
 
-![](rmarkdown.png){.absolute top="0%" right="0%" width="20%"}
-
-* **R** programming language <br> (> 60 other also possible) <!-- https://bookdown.org/yihui/rmarkdown/language-engines.html -->
-
-* **.Rmd** files (edit in RStudio, VS Code, etc.)
-
-* Markup language: **Markdown**
-
-* **HTML**, **PDF**, **DOCX** output formats (and more)
-
-* `rmarkdown` is an R package
-
-::: aside
-<https://cran.r-project.org/package=rmarkdown>
-
-<https://rmarkdown.rstudio.com/index.html>
-:::
-
-:::{.notes}
-Felix
-
-- Mixture code and text (analysis and description)
-- Composed of different parts (yaml header, markdown text, code chunks, inline code)
-   - Why is this useful?
-- Cross references (Figures, Tables, Chunks)
-- Bibliography
-- Different output formats for reports or slides (html, pdf, docx, pptx)
-- Maybe explain how this is compiled? (Probably too technical)
-:::
-<!-- ## Jupyter Notebooks
-
-![](jupyter.png){.absolute top="0%" right="0%" width="20%"}
-
-* Programming language: **Python** <br> (> 100 other possible)
-
-* Markup language: **Markdown**
-
-* **HTML**, **PDF** output formats (and more) -->
-
-
-
-
-## knitr
-
-![](knitr.png){.absolute top="0%" right="0%" width="20%"}
-
-* Programming language: **R** <br> (> 60 other also possible) <!-- https://bookdown.org/yihui/rmarkdown/language-engines.html -->
-
-* **.Rnw** files (edit in RStudio, VS Code, etc.)
-
-* Markup languages: **LaTeX** <br> (+ HTML, Markdown, and more)
-
-* **PDF** output format (and more)
-
-* `knitr` is an R package
-
-
-::: aside
-<https://cran.r-project.org/package=knitr>
-
-<https://yihui.org/knitr/>
-:::
-
-## Quarto
-
-![](quarto.png){.absolute top="0%" right="0%" width="20%"}
-
-* Programming language: **R**, **Python**, **Julia**
-
-* **.qmd** files  (edit in RStudio, VS Code, etc.)
-
-* Markup language: **Markdown**
-
-* **HTML**, **PDF**, **DOCX** output formats (and more)
-
-* Evolution of R Markdown (introduced in 2022)
-
-* `quarto` is a separate program
-
-
-::: aside
-<https://quarto.org/>
-:::
-
-:::{.notes}
-Felix
-
-- Same parts as R markdown (yaml header, markdown text, code chunks, inline code)
-- Slightly different syntax (Setting options, finer control over cross references)
-- Different output formats (reveal.js - presentation, observable.js - interactive)
-:::
 
 ## Which tool for whom?
 
-* `rmarkdown` &rarr; **R** users (beginner to advanced)
 * `knitr` &rarr; **R**+**LaTeX** users (intermediate to advanced) 
-<!-- * Jupyter Notebooks &rarr; established, for Python and Julia, not very good for dynamic reporting -->
-* `quarto` &rarr; **R**/**Python**/**Julia** users (beginner to advanced)
+* `R Markdown` &rarr; **R** users (beginner to advanced)
+* `Quarto` &rarr; **R**/**Python**/**Julia** users (beginner to advanced)
 
-![](rmarkdown-meme.jpg){.absolute bottom="18%" left="0%" width="30%"}
-![](knitr-meme.jpg){.absolute bottom="0%" left="32%" width="30%"}
+![](knitr-meme.jpg){.absolute bottom="18%" left="0%" width="30%"}
+![](rmarkdown-meme.jpg){.absolute bottom="0%" left="32%" width="30%"}
 ![](quarto-meme.jpg){.absolute bottom="10%" left="65%" width="30%"}
 
 
@@ -217,6 +123,100 @@ Felix
 
 :::{.notes}
 Felix
+:::
+
+## Backup: R Markdown 
+
+![](rmarkdown.png){.absolute top="0%" right="0%" width="20%"}
+
+* **R** programming language <br> (> 60 other also possible) <!-- https://bookdown.org/yihui/rmarkdown/language-engines.html -->
+
+* **.Rmd** files (edit in RStudio, VS Code, etc.)
+
+* Markup language: **Markdown**
+
+* **HTML**, **PDF**, **DOCX** output formats (and more)
+
+* `rmarkdown` is an **R** package
+
+::: aside
+<https://CRAN.R-project.org/package=rmarkdown>
+
+<https://rmarkdown.rstudio.com/index.html>
+:::
+
+:::{.notes}
+Felix
+
+- Mixture code and text (analysis and description)
+- Composed of different parts (yaml header, markdown text, code chunks, inline code)
+   - Why is this useful?
+- Cross references (Figures, Tables, Chunks)
+- Bibliography
+- Different output formats for reports or slides (html, pdf, docx, pptx)
+- Maybe explain how this is compiled? (Probably too technical)
+:::
+<!-- ## Jupyter Notebooks
+
+![](jupyter.png){.absolute top="0%" right="0%" width="20%"}
+
+* Programming language: **Python** <br> (> 100 other possible)
+
+* Markup language: **Markdown**
+
+* **HTML**, **PDF** output formats (and more) -->
+
+
+
+
+## Backup: knitr
+
+![](knitr.png){.absolute top="0%" right="0%" width="20%"}
+
+* Programming language: **R** <br> (> 60 other also possible) <!-- https://bookdown.org/yihui/rmarkdown/language-engines.html -->
+
+* **.Rnw** files (edit in RStudio, VS Code, etc.)
+
+* Markup languages: **LaTeX** <br> (+ HTML, Markdown, and more)
+
+* **PDF** output format (and more)
+
+* `knitr` is an **R** package
+
+
+::: aside
+<https://CRAN.R-project.org/package=knitr>
+
+<https://yihui.org/knitr/>
+:::
+
+## Backup: Quarto
+
+![](quarto.png){.absolute top="0%" right="0%" width="20%"}
+
+* Programming language: **R**, **Python**, **Julia**
+
+* **.qmd** files  (edit in RStudio, VS Code, etc.)
+
+* Markup language: **Markdown**
+
+* **HTML**, **PDF**, **DOCX** output formats (and more)
+
+* Evolution of R Markdown (introduced in 2022)
+
+* `quarto` is a separate program
+
+
+::: aside
+<https://quarto.org/>
+:::
+
+:::{.notes}
+Felix
+
+- Same parts as R markdown (yaml header, markdown text, code chunks, inline code)
+- Slightly different syntax (Setting options, finer control over cross references)
+- Different output formats (reveal.js - presentation, observable.js - interactive)
 :::
 
 ## Backup: Code in Quarto Presentation
