@@ -67,6 +67,14 @@ Felix
 - Jupyter not really part of this workshop
 :::
 
+## Overview
+
+|                      | programming language   | markup language | main output format |
+| -------------------- |----------------------- | --------------- | ------------------ |
+| Knitr (.Rnw)         | *R*                    | Latex           | pdf                |
+| RMarkdown (.Rmd)     | *R*                    | Markdown        | html, pdf, docx    |
+| Quarto (.qmd)        | *R*, *Python*, *Julia* | Markdown        | html, pdf, docx    |
+
 ## R Markdown 
 
 ![](rmarkdown.png){.absolute top="0%" right="0%" width="20%"}
