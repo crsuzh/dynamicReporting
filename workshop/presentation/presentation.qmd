@@ -184,7 +184,7 @@ This inline code renders as 8: \Sexpr{3 + 5}.
 ````markdown
 ```{r echo=FALSE}
 #| results: asis
-paste("This inline chunk renders as 8:", "`r 3 + 5`", ".")
+cat(paste("This inline chunk renders as 8:", "`r 3 + 5`", "."))
 ```
 ````
 
