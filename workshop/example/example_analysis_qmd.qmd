@@ -2,6 +2,10 @@
 title: "Workshop on Quarto"
 author: "Samuel Pawel & Felix Hofmann"
 bibliography: refs.bib
+execute:
+    echo: true
+    warning: false
+    message: false
 format:
     html:
         toc: true
@@ -25,7 +29,10 @@ In this section, we will quickly go through an example data set provided
 by @ZHdata which contains data of traffic accidents in the city
 of Zurich. In order to keep things simple, we have already pre-processed
 the data and saved them into csv-files called
-[accidents_2020.csv]() and [accidents_2021.csv](), respectively.
+[accidents_2020.csv](https://raw.githubusercontent.com/crsuzh/dynamicReporting/presentation/workshop/accidents_2020.csv)
+and
+[accidents_2021.csv](https://raw.githubusercontent.com/crsuzh/dynamicReporting/presentation/workshop/accidents_2021.csv),
+respectively.
 
 ## Importing the data
 
@@ -65,11 +72,11 @@ kable(head(data))
 ## Exploratory data analysis
 
 Since the data is now in the form we want it to be, we can start
-exploring it. For we can see for
+exploring it.
 
-We can for example investigate how many accidents
+We could for example investigate how many accidents
 happened per month or per weekday. A visual approach to answer
-this question is shown in @fig-accidents-by-month.
+this question is shown in @fig-accidents-by-DayMonth.
 Specifically, @fig-accidents-by-DayMonth-1 shows the number of
 accidents by month whereas @fig-accidents-by-DayMonth-2 illustrates
 the number of accidents by weekday.
@@ -119,8 +126,12 @@ theme(
     axis.text.x = element_text(angle = 45, hjust = 1)
 )
 ```
-
-
+It is generally good practice to include details of your session
+in the document because it contains information about the computing environment.
+This is important, because software changes over time and the analysis, thus, might
+not run anymore with future versions. With this information, it is possible to
+set up an environment with the exact same software versions that the analysis was
+run in, which, in the end, increases the reproducibility of the results.
 
 ```{r}
 #| label: sessionInfo

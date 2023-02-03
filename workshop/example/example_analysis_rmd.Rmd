@@ -11,19 +11,30 @@ output:
 ---
 
 ```{r "setup", include = FALSE}
-# Load libraries
+## packages
 library(knitr)
 library(ggplot2)
 library(dplyr)
+
+opts_chunk$set(
+    echo = TRUE, # display R code
+    warning = FALSE, # don't display warning messages
+    message = FALSE, # don't display package loading messages
+    fig.align = "center", # center figures
+    fig.height = 4
+)
 ```
 
-# Analysis of traffic accidents
+# Analysis of traffic accidents in Zürich
 
 In this section, we will quickly go through an example data set provided
 by @ZHdata which contains data of traffic accidents in the city of
 Zurich. In order to keep things simple, we have already pre-processed
-the data and saved them into csv-files called [accidents_2020.csv]() and
-[accidents_2021.csv](), respectively.
+the data and saved them into csv-files called
+[accidents_2020.csv](https://raw.githubusercontent.com/crsuzh/dynamicReporting/presentation/workshop/accidents_2020.csv)
+and
+[accidents_2021.csv](https://raw.githubusercontent.com/crsuzh/dynamicReporting/presentation/workshop/accidents_2021.csv)
+, respectively.
 
 ## Importing the data
 
@@ -48,7 +59,7 @@ following output: `r paste(names(data), collapse = ", ")`.
 However, this does not tell us much yet. It would probably be more
 helpful to actually see what this data looks like. Using the `kable`
 function in combination with the `head` function, we can generate a
-table showing the first few observations of the data table.
+table showing the first few observations of the data.
 
 ```{r "tbl-display-data"}
 kable(head(data), caption = "The first six rows of our data set.")
@@ -57,7 +68,7 @@ kable(head(data), caption = "The first six rows of our data set.")
 ## Exploratory data analysis
 
 Since the data is now in the form we want it to be, we can start
-exploring it. For we can see for
+exploring it.
 
 We can for example investigate how many accidents happened per month or
 per weekday. A visual approach to answer this question is shown in the 
@@ -102,6 +113,13 @@ theme(
     axis.text.x = element_text(angle = 45, hjust = 1)
 )
 ```
+
+It is generally good practice to include details of your session
+in the document because it contains information about the computing environment.
+This is important, because software changes over time and the analysis, thus, might
+not run anymore with future versions. With this information, it is possible to
+set up an environment with the exact same software versions that the analysis was
+run in, which, in the end, increases the reproducibility of the results.
 
 ```{r "sessionInfo"}
 sessionInfo()
