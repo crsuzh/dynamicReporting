@@ -8,6 +8,7 @@
 *example_analysis_*.tex
 *example_analysis_*.log
 *example_analysis_*.gz
+*figure/
 
 *.lintr
 
