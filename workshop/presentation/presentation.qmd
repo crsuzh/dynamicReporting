@@ -3,13 +3,18 @@ title: "Dynamic Reporting"
 subtitle: "Workshop at the UZH Reproducibility Day 2023"
 author: "Samuel Pawel and Felix Hofmann"
 institute: "Center for Reproducible Science (CRS)"
-format: revealjs
+format: 
+  revealjs:
+    width: 1400
+    height: 900
 embed-resources: true # create a single file with all depdencies inside
 ---
 
 ## Overview
 <!-- options: -->
 <!-- https://quarto.org/docs/reference/formats/presentations/revealjs.html -->
+
+<br> <br> 
 
 1) What is dynamic reporting?
 
@@ -38,6 +43,8 @@ Goal 2: Learn about popular tools for dynamic reporting
 :::: columns
 
 ::: column
+<br> <br> 
+
 - Tedious and error-prone
 - Not directly reproducible
 - Difficult to share/reuse
@@ -45,6 +52,8 @@ Goal 2: Learn about popular tools for dynamic reporting
 :::
 
 ::: column
+<br> <br> 
+
 ![](./diagram1.svg){fig-align="right"}
 :::
 
@@ -64,16 +73,18 @@ After this slide:
 
 ## Popular tools for dynamic reporting
 
+<br> <br> <br>
 |                      | Main programming language    | Main markup language | Main output format |
 | -------------------- |----------------------------- | -------------------- | ------------------ |
 | `knitr` (.Rnw)       | **R**                        | LaTeX                | pdf                |
 | `R Markdown` (.Rmd)  | **R**                        | Markdown             | html, pdf, docx    |
 | `Quarto` (.qmd)      | **R**, **Python**, **Julia** | Markdown             | html, pdf, docx    |
 
-## Composition of dyna
 
 
 ## Which tool for whom?
+
+<br> 
 
 * `knitr` &rarr; **R**+**LaTeX** users (intermediate to advanced) 
 * `R Markdown` &rarr; **R** users (beginner to advanced)
@@ -84,7 +95,7 @@ After this slide:
 ![](quarto-meme.jpg){.absolute bottom="10%" left="65%" width="30%"}
 
 
-## Useful links 1
+## Useful links 
 
 * [Dynamic Reporting & Reproducibility in Research](https://www.sts.uzh.ch/de/Lehrangebote-School/Lehrangebote-ab-FS22/Future-Skills/Get-R_eady.html) 
 <br> &rarr; transdisciplinary course at UZH
@@ -98,10 +109,6 @@ After this slide:
 * [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
 <br> &rarr; freely available book
 
-
-## Useful links 2
-
-
 * [knitr website](https://yihui.org/knitr)
 <br> &rarr; very comprehensive website from the `knitr` author
 
@@ -109,6 +116,7 @@ After this slide:
 <br> &rarr; good tutorial series from R Studio
 
 * [R Markdown cheatsheet](https://posit.co/resources/cheatsheets/)
+
 
 
 ## Exercises
