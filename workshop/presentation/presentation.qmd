@@ -66,6 +66,7 @@ Felix
 - Jupyter not really part of this workshop
 :::
 
+<<<<<<< HEAD
 
 
 ## Which tool for whom?
@@ -126,6 +127,17 @@ Felix
 :::
 
 ## Backup: R Markdown 
+=======
+## Overview
+
+|                      | programming language   | markup language | main output format |
+| -------------------- |----------------------- | --------------- | ------------------ |
+| Knitr (.Rnw)         | *R*                    | Latex           | pdf                |
+| RMarkdown (.Rmd)     | *R*                    | Markdown        | html, pdf, docx    |
+| Quarto (.qmd)        | *R*, *Python*, *Julia* | Markdown        | html, pdf, docx    |
+
+## R Markdown 
+>>>>>>> 9e646b87f7827a7b69eb36f0a9fc33ddd611d7b3
 
 ![](rmarkdown.png){.absolute top="0%" right="0%" width="20%"}
 
