@@ -59,6 +59,13 @@ Goal 2: Learn about popular tools for dynamic reporting
 
 ::::
 
+:::{.notes}
+After this slide:
+
+- switch to RStudio and compile the example with `accidents_2020.csv`
+- then change `filename` to `accidents_2021.csv` and recompile
+:::
+
 ## Dynamic reporting workflow
 
 ![](diagram2.svg){.absolute width="100%"}
@@ -68,11 +75,12 @@ Goal 2: Learn about popular tools for dynamic reporting
 
 <br> <br> <br>
 
-|                      | Main programming language   | Main markup language | Main output format |
-| -------------------- |----------------------- | --------------- | ------------------ |
-| `knitr` (.Rnw)       | **R**                    | LaTeX           | pdf                |
-| `R Markdown` (.Rmd)     | **R**                    | Markdown        | html, pdf, docx    |
-| `Quarto`     (.qmd)        | **R**, **Python**, **Julia** | Markdown        | html, pdf, docx    |
+|                      | Main programming language    | Main markup language | Main output format |
+| -------------------- |----------------------------- | -------------------- | ------------------ |
+| `knitr` (.Rnw)       | **R**                        | LaTeX                | pdf                |
+| `R Markdown` (.Rmd)  | **R**                        | Markdown             | html, pdf, docx    |
+| `Quarto` (.qmd)      | **R**, **Python**, **Julia** | Markdown             | html, pdf, docx    |
+
 
 
 ## Which tool for whom?
@@ -134,6 +142,8 @@ Felix
 
 ## Backup: R Markdown 
 
+<br>
+
 ![](rmarkdown.png){.absolute top="0%" right="0%" width="20%"}
 
 * **R** programming language <br> (> 60 other also possible) <!-- https://bookdown.org/yihui/rmarkdown/language-engines.html -->
@@ -163,20 +173,12 @@ Felix
 - Different output formats for reports or slides (html, pdf, docx, pptx)
 - Maybe explain how this is compiled? (Probably too technical)
 :::
-<!-- ## Jupyter Notebooks
-
-![](jupyter.png){.absolute top="0%" right="0%" width="20%"}
-
-* Programming language: **Python** <br> (> 100 other possible)
-
-* Markup language: **Markdown**
-
-* **HTML**, **PDF** output formats (and more) -->
-
 
 
 
 ## Backup: knitr
+
+<br>
 
 ![](knitr.png){.absolute top="0%" right="0%" width="20%"}
 
@@ -198,6 +200,8 @@ Felix
 :::
 
 ## Backup: Quarto
+
+<br>
 
 ![](quarto.png){.absolute top="0%" right="0%" width="20%"}
 
