@@ -81,16 +81,6 @@ Felix
 
 * `rmarkdown` is an R package
 
-<!-- . . . -->
-
-<!-- `## Section title` -->
-
-<!-- ### Section title -->
-
-<!-- `This is **bold** and this is *italic*.` -->
-
-<!-- This is **bold** and this is *italic*. -->
-
 ::: aside
 <https://cran.r-project.org/package=rmarkdown>
 

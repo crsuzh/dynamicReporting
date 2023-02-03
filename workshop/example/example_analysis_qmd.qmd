@@ -6,13 +6,17 @@ execute:
     echo: true
     warning: false
     message: false
+# slighlty differnet YAML header specification than in R Markdown
+# (e.g., "format" instead of "output", "html" instead of "html_document")
 format:
     html:
         toc: true
         number-sections: true
         colorlinks: true
+# set "jupyter: python3" to use with python
 ---
 
+<!-- R code chunks start as in R Markdown but different way to specify options  -->
 ```{r}
 #| label: setup
 #| include: false

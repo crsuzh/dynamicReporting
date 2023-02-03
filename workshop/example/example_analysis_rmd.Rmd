@@ -2,7 +2,9 @@
 title: "Workshop on R Markdown"
 author: "Samuel Pawel & Felix Hofmann"
 bibliography: refs.bib
-output:
+# change here to something else (https://bookdown.org/yihui/rmarkdown/output-formats.html)
+# some formats (e.g., pdf) require LaTeX installation!
+output: 
   html_document:
     toc: true
     number_sections: true

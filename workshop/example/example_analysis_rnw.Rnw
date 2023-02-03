@@ -1,3 +1,4 @@
+% ordinary LaTeX code to specify document type + packages ("Preamble")
 \documentclass[a4paper, 11pt]{article}
 \usepackage[round]{natbib} % references
 \usepackage{hyperref} % links
@@ -21,6 +22,7 @@
 
 \maketitle
 
+% R code chunks specified differently than in R Markdown
 << "setup", include = FALSE >>=
 ## packages
 library(knitr)
@@ -34,14 +36,35 @@ opts_chunk$set(echo = TRUE, # display R code
                fig.align = "center", # center figures
                fig.height = 4
                )
-
 @
+
 
 This document shows the capabilities of \texttt{knitr} for dynamic reporting
 with \textsf{R}. The \texttt{knitr} package uses \LaTeX{} markup language which
-is especially useful for mathematical typesetting, such as in this equation
+is especially useful for mathematical typesetting.
+
+  
+\section{\LaTeX{} syntax}
+% see e.g., https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes
+
+% unnumbered list
+\begin{itemize}
+  \item List item 1
+  \item List item 2
+\end{itemize}
+
+% numbered list
+\begin{enumerate}
+  \item Numbered list item 1
+  \item Numbered list item 2
+\end{enumerate}
+
+% inline math mode
+$\phi = (1 + \sqrt{5})/2 \approx 1.61$
+
+% math mode
 $$\pi(\theta \,\vert\, y) = \frac{f(y \,\vert\, \theta) \, \pi(\theta)}{\int
-  f(y \,\vert\, \theta^\prime) \, \pi(\theta^{\prime}) \, \mathrm{d}\theta^{\prime}}. $$
+  f(y \,\vert\, \theta^\prime) \, \pi(\theta^{\prime}) \, \mathrm{d}\theta^{\prime}}$$
 
 \section{Data analysis}
 In the following we will analyze the data from \citet{ZHdata} on traffic
