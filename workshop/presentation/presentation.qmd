@@ -7,7 +7,7 @@ format: revealjs
 embed-resources: true # create a single file with all depdencies inside
 ---
 
-## Schedule
+## Overview
 <!-- options: -->
 <!-- https://quarto.org/docs/reference/formats/presentations/revealjs.html -->
 
@@ -50,6 +50,13 @@ Goal 2: Learn about popular tools for dynamic reporting
 
 ::::
 
+:::{.notes}
+After this slide:
+
+- switch to RStudio and compile the example with `accidents_2020.csv`
+- then change `filename` to `accidents_2021.csv` and recompile
+:::
+
 ## Dynamic reporting workflow
 
 ![](diagram2.svg){.absolute width="100%"}
@@ -57,11 +64,13 @@ Goal 2: Learn about popular tools for dynamic reporting
 
 ## Popular tools for dynamic reporting
 
-|                      | Main programming language   | Main markup language | Main output format |
-| -------------------- |----------------------- | --------------- | ------------------ |
-| `knitr` (.Rnw)         | **R**                    | LaTeX           | pdf                |
-| `R Markdown` (.Rmd)     | **R**                    | Markdown        | html, pdf, docx    |
-| `Quarto` (.qmd)        | **R**, **Python**, **Julia** | Markdown        | html, pdf, docx    |
+|                      | Main programming language    | Main markup language | Main output format |
+| -------------------- |----------------------------- | -------------------- | ------------------ |
+| `knitr` (.Rnw)       | **R**                        | LaTeX                | pdf                |
+| `R Markdown` (.Rmd)  | **R**                        | Markdown             | html, pdf, docx    |
+| `Quarto` (.qmd)      | **R**, **Python**, **Julia** | Markdown             | html, pdf, docx    |
+
+## Composition of dyna
 
 
 ## Which tool for whom?
