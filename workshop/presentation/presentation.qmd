@@ -74,12 +74,13 @@ After this slide:
 
 <br> <br> <br>
 
-<<<<<<< HEAD
 |                     | Main programming language    | Main markup language | Main output format |
 |-----------------|----------------------|-----------------|-----------------|
 | `knitr` (.Rnw)      | **R**                        | LaTeX                | pdf                |
 | `R Markdown` (.Rmd) | **R**                        | Markdown             | html, pdf, docx    |
 | `Quarto` (.qmd)     | **R**, **Python**, **Julia** | Markdown             | html, pdf, docx    |
+
+## Components of dynamic reports [header]
 
 ```yaml
 ---
@@ -116,6 +117,7 @@ with `R`. The `markdown` markup language which
 is especially useful for mathematical typesetting.
 ```
 
+
 ## Which tool for whom?
 
 <br>
@@ -144,10 +146,6 @@ is especially useful for mathematical typesetting.
 
 ## Exercises
 
-1)  Download the data sets on **traffic accidents in Zurich** from <https://github.crsuzh/dynamicReporting/workshop/>.
-
-2)  Explore the data from the **2020** (file `accidents_2020.csv`) . Compute the number of accidents for each **weekday** and **month**. Make plots of the number of *accidents vs. weekday*, and the number of *accidents vs. month*. Create an HTML report using either `R Markdown` or `Quarto`.
-=======
 <br>
 
 1) Download the data sets on **traffic accidents in Zurich** from <https://github.crsuzh/dynamicReporting/workshop/>.
@@ -197,20 +195,6 @@ Felix
 -   Different output formats for reports or slides (html, pdf, docx, pptx)
 -   Maybe explain how this is compiled? (Probably too technical)
 :::
-
-```{=html}
-<!-- ## Jupyter Notebooks
-
-![](jupyter.png){.absolute top="0%" right="0%" width="20%"}
-
-* Programming language: **Python** <br> (> 100 other possible)
-
-* Markup language: **Markdown**
-
-* **HTML**, **PDF** output formats (and more) -->
-```
-=======
-
 
 ## Backup: knitr
 
