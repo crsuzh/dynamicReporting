@@ -1,5 +1,14 @@
 *.ipynb_checkpoints/
 *example_analysis_files/
-*example_analysis.html
-*example_analysis.pdf
+*example_analysis_*.html
+*example_analysis_*.pdf
+*example_analysis_*.bbl
+*example_analysis_*.odt
+*example_analysis_*.docx
+*example_analysis_*.tex
+*example_analysis_*.log
+*example_analysis_*.gz
+
 *.lintr
+
+
