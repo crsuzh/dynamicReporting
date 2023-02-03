@@ -4,7 +4,9 @@ author: "Samuel Pawel & Felix Hofmann"
 bibliography: refs.bib
 # change here to something else (https://bookdown.org/yihui/rmarkdown/output-formats.html)
 # some formats (e.g., pdf) require LaTeX installation!
-output: 
+# output: word_document
+# output: pdf_document
+output:
   html_document:
     toc: true
     number_sections: true

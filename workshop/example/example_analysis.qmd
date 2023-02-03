@@ -4,6 +4,8 @@ author: "Samuel Pawel & Felix Hofmann"
 bibliography: refs.bib
 # slighlty differnet YAML header specification than in R Markdown
 # (e.g., "format" instead of "output", "html" instead of "html_document")
+# format: odt
+# format: pdf
 format:
     html:
         toc: true
