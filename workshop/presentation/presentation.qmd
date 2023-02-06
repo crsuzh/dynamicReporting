@@ -122,7 +122,7 @@ format: html
 
 ```latex
 \section{This is a section title}
-The \textbackslash textbf{} command renders a word \textbf{bold}. Lists can be done as follows:
+The textbf command renders a word \textbf{bold}. Lists can be done as follows:
 
 \begin{itemize}
     \item element 1
