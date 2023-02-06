@@ -66,6 +66,8 @@ After this slide:
 
 ## Live Demo
 
+![](open_data_zurich.png){.absolute width="100%"}
+
 ## Dynamic reporting workflow
 
 ![](diagram2.svg){.absolute width="100%"}
@@ -74,13 +76,16 @@ After this slide:
 
 <br> <br> <br>
 
-|                     | Main programming language    | Main markup language | Main output format |
+|                     | Programming language    | Markup language | Output format |
 |-----------------|----------------------|-----------------|-----------------|
 | `knitr` (.Rnw)      | **R**                        | LaTeX                | pdf                |
 | `R Markdown` (.Rmd) | **R**                        | Markdown             | html, pdf, docx    |
 | `Quarto` (.qmd)     | **R**, **Python**, **Julia** | Markdown             | html, pdf, docx    |
 
-## Components of dynamic reports [header]
+
+## Components of dynamic reports
+
+## Header
 
 <br>
 
@@ -89,7 +94,7 @@ After this slide:
 ```latex
 \documentclass[a4paper, 11pt]{article}
 \title{Analysis of traffic accidents in Zürich}
-\author{Felix Hofmann and Samuel Pawel}
+\author{Samuel Pawel and Felix Hofmann}
 \begin{document}
 ```
 
@@ -113,7 +118,7 @@ format: html
 ---
 ```
 
-## Components of dynamic reports [text]
+## Text
 
 <br>
 
@@ -145,7 +150,7 @@ We can also do lists:
 - element 2
 ```
 
-## Components of dynamic reports [code chunks]
+## Code chunks
 
 <br>
 
@@ -168,8 +173,21 @@ x <- seq(-3, 3, 0.01)
 plot(x, dnorm(x), type = "l")
 ```
 ````
+   
+````markdown
+`python ''````{python}
+import numpy as np
+from scipy.stats import norm
+import matplotlib.pyplot as plt
 
-## Components of dynamic reports [Inline code]
+x = np.arange(-3, 3, 0.01)
+fig, ax = plt.subplots()
+ax.plot(x, norm.pdf(x))
+fig.show()
+```
+````
+
+## Inline code
 
 <br>
 

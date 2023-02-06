@@ -13,4 +13,4 @@ workshop/presentation/presentation.html
 
 *.lintr
 
-
+.Rhistory
