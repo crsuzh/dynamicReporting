@@ -244,15 +244,16 @@ cat(paste0("This inline chunk renders as 8:", "`r 3 + 5`", "."))
 
 <br>
 
-1) Download the data sets on **traffic accidents in Zurich** from <https://github.crsuzh/dynamicReporting/workshop/>.
+1) Download the data sets on **traffic accidents in Zurich** from <https://osf.io/x6h3y/>.
 
-2) Explore the data from the **2020** (file `accidents_2020.csv`) . 
-   Compute the number of accidents for each **weekday** and visualize your
+2) Explore the data from **2020** (file `accidents_2020.csv`) . 
+   Compute the **number of accidents per weekday** and visualize your
    results. Create an HTML report using either `R Markdown` or `Quarto`.
 
 3)  Now use the data from **2020** and **2021** (file `accidents_2021.csv`) and create an updated report.
 
-4)  **Bonus**: Convert your report to a presentation.
+4)  **Bonus**: Explore the data set further, create additional plots and tables. Convert your report to 
+    an alternative output format.
 
 ::: notes
 Felix
