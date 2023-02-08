@@ -10,6 +10,8 @@ from the open data repository from the city of Zürich
 (<https://data.stadt-zuerich.ch/dataset/sid_dav_strassenverkehrsunfallorte>).
 
 ```{r}
+#| include: false
+
 ## import data into R
 data <- read.csv("accidents_2020.csv") # <-- change here the data file
 
@@ -21,6 +23,8 @@ The data set contains information on `r nrAccidents` traffic accidents.
 The following plot shows the number of accidents per weekday.
 
 ```{r}
+#| label: weekday-accidents
+
 ## create plot of weekday vs. number of traffic accidents
 ## YOUR CODE HERE
 ```
@@ -29,6 +33,8 @@ We see that ....
 
 
 ```{r}
+#| label: sessioninfo
+
 ## print R version and package versions for reproducibility
 sessionInfo()
 ```

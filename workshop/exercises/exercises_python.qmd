@@ -54,6 +54,8 @@ The following plot shows the number of accidents per weekday.
 We see that ...
 
 ```{python}
+#| label: sessioninfo
+
 ## print the session info
 session_info.show(html=False)
 ```

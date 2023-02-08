@@ -15,6 +15,7 @@ In order to use Julia, you need to:
 -->
 
 ```{julia}
+#| label: setup
 #| include: false
 
 # install packages (if not yet installed)
@@ -35,6 +36,7 @@ from the open data repository from the city of Zürich
 (<https://data.stadt-zuerich.ch/dataset/sid_dav_strassenverkehrsunfallorte>).
 
 ```{julia}
+#| label: data-import
 #| output: false
  
 ## import data into Julia
@@ -45,6 +47,7 @@ nrAccidents = nrow(data)
 ```
 
 ```{julia}
+#| label: inline-code
 #| echo: false
 
 Markdown.parse("""
@@ -55,6 +58,8 @@ The data set contains information on $nrAccidents traffic accidents.
 The following plot shows the number of accidents per weekday.
 
 ```{julia}
+#| label: weekday-accidents
+
 ## create plot of weekday vs. number of traffic accidents
 ## YOUR CODE HERE
 ```
@@ -63,6 +68,8 @@ We see that ....
 
 
 ```{julia}
+#| label: sessioninfo
+
 ## add manual function for sessionInfo
 function sessioninfo()
     println("Julia: v." * string(VERSION) * "\n")
