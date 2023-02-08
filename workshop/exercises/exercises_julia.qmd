@@ -2,7 +2,7 @@
 title: "Analysis of traffic accidents in Zürich"
 author: "YOUR NAME HERE"
 format: html
-jupyter: julia-1.8
+jupyter: julia-1.8 # adapt this to the Julia version you have installed
 embed-resources: true # create a single file with all depdencies inside
 ---
 
@@ -37,7 +37,7 @@ from the open data repository from the city of Zürich
 ```{julia}
 #| output: false
  
-## import data into R
+## import data into Julia
 data = CSV.read("accidents_2020.csv", DataFrame)
 
 ## compute the number of accidents in total
@@ -54,7 +54,7 @@ The data set contains information on $nrAccidents traffic accidents.
 
 The following plot shows the number of accidents per weekday.
 
-```{r}
+```{julia}
 ## create plot of weekday vs. number of traffic accidents
 ## YOUR CODE HERE
 ```
