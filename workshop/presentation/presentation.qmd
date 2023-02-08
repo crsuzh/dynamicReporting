@@ -25,7 +25,10 @@ embed-resources: true # create a single file with all depdencies inside
 3)  Hands-on exercises
 
 ::: aside
-Material at <https://github.com/crsuzh/dynamicReporting>
+Material at 
+
+- <https://github.com/crsuzh/dynamicReporting> 
+- <https://osf.io/x6h3y>
 :::
 
 ::: notes
@@ -66,11 +69,17 @@ After this slide:
 
 ## Live Demo
 
-![](open_data_zurich.png){.absolute width="100%"}
+![](open_data_zurich.png){.absolute width="90%"}
+
+::: aside
+<https://data.stadt-zuerich.ch/dataset/sid_dav_strassenverkehrsunfallorte>
+:::
+
 
 ## Dynamic reporting workflow
 
 ![](diagram2.svg){.absolute width="100%"}
+
 
 ## Popular tools for dynamic reporting
 
