@@ -5,7 +5,7 @@ format: html
 embed-resources: true # create a single file with all depdencies inside
 ---
 
-This document shows an analysis of traffic accidents in Zürich. The data data were downloaded
+This document shows an analysis of traffic accidents in Zürich. The data were downloaded
 from the open data repository from the city of Zürich 
 (<https://data.stadt-zuerich.ch/dataset/sid_dav_strassenverkehrsunfallorte>).
 

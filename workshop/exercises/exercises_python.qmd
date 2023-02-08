@@ -1,0 +1,59 @@
+---
+title: "Analysis of traffic accidents in Zürich"
+author: "YOUR NAME HERE"
+format: pdf
+jupyter: python3
+embed-resources: true # create a single file with all dependencies inside
+---
+
+```{python}
+#| label: setup
+#| include: false
+
+# Import python modules
+# If any of these are not installed try running:
+# pip install ...
+# where ... is the module name. See below for the list of modules used
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from IPython.display import display, Markdown
+import session_info
+```
+This document shows an analysis of traffic accidents in Zürich. The data were
+downloaded from the open data repository from the city of Zürich
+(<https://data.stadt-zuerich.ch/dataset/sid_dav_strassenverkehrsunfallorte>).
+
+```{python}
+#| label: data-import
+
+## import data into Python
+data = pd.read_csv("accidents_2020.csv")
+
+## comput number of accidents in total
+nrAccidents = data.shape[0]
+```
+```{python}
+#| label: inline-code
+#| echo: false
+
+display(Markdown("""
+The data set contains information on {nrAccidents} traffic accidents.
+""".format(nrAccidents = nrAccidents)))
+```
+The following plot shows the number of accidents per weekday.
+
+```{python}
+#| label: weekday-accidents
+
+## create plot of weekday vs. number of traffic accidents
+## YOUR CODE HERE
+```
+
+We see that ...
+
+```{python}
+## print the session info
+session_info.show(html=False)
+```
