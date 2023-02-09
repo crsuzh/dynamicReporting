@@ -1,0 +1,167 @@
+---
+title: "Workshop on R Markdown"
+author: "Samuel Pawel & Felix Hofmann"
+bibliography: refs.bib
+# change here to something else (https://bookdown.org/yihui/rmarkdown/output-formats.html)
+# some formats (e.g., pdf) require LaTeX installation!
+# output: word_document
+# output: pdf_document
+output:
+  html_document:
+    toc: true
+    number_sections: true
+    fig_caption: true
+    self_contained: true
+---
+
+<!-- this is an R code chunk -->
+<!-- Shortcut: insert with Ctrl + Alt + I (Mac: Cmd + Option + I) -->
+```{r "setup", include = FALSE}
+## packages
+library(knitr)
+library(ggplot2)
+library(dplyr)
+
+opts_chunk$set(
+    echo = TRUE, # display R code
+    warning = FALSE, # don't display warning messages
+    message = FALSE, # don't display package loading messages
+    fig.align = "center", # center figures
+    fig.height = 4
+)
+```
+
+# Markdown syntax
+
+For a detailed overview see <https://bookdown.org/yihui/rmarkdown/markdown-syntax.html>
+
+Here are some important parts:
+
+`# Section title`
+
+# Section title
+
+`## Subsection title`
+
+## Subsection title
+
+`This is **bold** and this is *italic*.`
+
+This is **bold** and this is *italic*.
+
+`* List item 1`
+
+`* List item 2`
+ 
+* List item 1
+* List item 2
+
+`1) Numbered list item 1`
+
+`2) Numbered list item 2`
+
+1) Numbered list item 1
+2) Numbered list item 2
+
+
+# Analysis of traffic accidents
+
+In this section, we will quickly go through an example data set provided
+by @ZHdata which contains data of traffic accidents in the city of
+Zurich. In order to keep things simple, we have already pre-processed
+the data and saved them into csv-files called
+[accidents_2020.csv](https://raw.githubusercontent.com/crsuzh/dynamicReporting/presentation/workshop/accidents_2020.csv)
+and
+[accidents_2021.csv](https://raw.githubusercontent.com/crsuzh/dynamicReporting/presentation/workshop/accidents_2021.csv)
+, respectively.
+
+## Importing the data
+
+First of all, let's make sure, we can import the data sets into an `R`
+session.
+
+```{r "data-import"}
+# Set the name of the file we want to import
+filename <- "../accidents_2021.csv"
+# Read the data file
+data <- read.csv(filename, header = TRUE, stringsAsFactors = FALSE)
+```
+
+Now that we have imported the data, we can have a look at the variables
+within the data set. We can do this in two different ways.
+
+First, we could list the names of the variables in the data set by
+including an inline code chunk. We can achieve this by calling
+`paste(names(data), collapse = ", ")`. Evaluating this generates the
+following output: `r paste(names(data), collapse = ", ")`.
+
+However, this does not tell us much yet. It would probably be more
+helpful to actually see what this data looks like. Using the `kable`
+function in combination with the `head` function, we can generate a
+table showing the first few observations of the data.
+
+```{r "tbl-display-data"}
+kable(head(data), caption = "The first six rows of our data set.")
+```
+
+## Exploratory data analysis
+
+Since the data is now in the form we want it to be, we can start
+exploring it.
+
+We can for example investigate how many accidents happened per month or
+per weekday. A visual approach to answer this question is shown in the 
+following figures.
+
+```{r "fig-accidents-by-DayMonth"}
+data %>%
+mutate(
+    month = factor(month.name[month], levels = month.name),
+    year = factor(year)
+) %>%
+group_by(month, year) %>%
+summarise(accidents = n(), .groups = "drop") %>%
+ggplot(aes(x = month, y = accidents, fill = year)) +
+geom_col(position = position_dodge2()) +
+theme_minimal() +
+labs(x = "Month", y = "# Accidents", fill = "Year") +
+theme(
+    legend.position = "top",
+    axis.text.x = element_text(angle = 45, hjust = 1)
+)
+
+
+data %>%
+mutate(
+    weekday_name = factor(
+        weekday_name,
+        levels = c(
+            "Monday", "Tuesday", "Wednesday",
+            "Thursday", "Friday", "Saturday", "Sunday"
+        )
+    )
+) %>%
+group_by(weekday_name, year) %>%
+summarise(accidents = n(), .groups = "drop") %>%
+ggplot(aes(x = weekday_name, y = accidents, fill = as.factor(year))) +
+geom_col(position = position_dodge2()) +
+theme_minimal() +
+labs(x = "Weekday", y = "# Accidents", fill = "Year") +
+theme(
+    legend.position = "top",
+    axis.text.x = element_text(angle = 45, hjust = 1)
+)
+```
+
+It is generally good practice to include details of your session
+in the document because it contains information about the computing environment.
+This is important, because software changes over time and the analysis, thus, might
+not run anymore with future versions. With this information, it is possible to
+set up an environment with the exact same software versions that the analysis was
+run in, which, in the end, increases the reproducibility of the results.
+
+```{r "sessionInfo"}
+sessionInfo()
+```
+
+# References

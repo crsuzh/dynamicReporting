@@ -1,0 +1,88 @@
+---
+title: "Analysis of traffic accidents in Zürich"
+author: "YOUR NAME HERE"
+format: html
+jupyter: julia-1.8 # adapt this to the Julia version you have installed
+embed-resources: true # create a single file with all depdencies inside
+---
+
+<!--
+In order to use Julia, you need to:
+- Have Julia installed (https://julialang.org/downloads/)
+- Have it on your search path 
+    - On UNIX alike: `which julia` must return a valid path
+- Need the R package: JuliaCall (`install.packages("JuliaCall")`)
+-->
+
+```{julia}
+#| label: setup
+#| include: false
+
+# install packages (if not yet installed)
+import Pkg
+Pkg.add("CSV")
+Pkg.add("DataFrames")
+Pkg.add("Markdown")
+
+# Load packages
+using CSV
+using DataFrames
+using Markdown 
+```
+
+
+This document shows an analysis of traffic accidents in Zürich. The data were downloaded
+from the open data repository from the city of Zürich 
+(<https://data.stadt-zuerich.ch/dataset/sid_dav_strassenverkehrsunfallorte>).
+
+```{julia}
+#| label: data-import
+#| output: false
+ 
+## import data into Julia
+data = CSV.read("accidents_2020.csv", DataFrame)
+
+## compute the number of accidents in total
+nrAccidents = nrow(data)
+```
+
+```{julia}
+#| label: inline-code
+#| echo: false
+
+Markdown.parse("""
+The data set contains information on $nrAccidents traffic accidents.
+""")
+```
+
+The following plot shows the number of accidents per weekday.
+
+```{julia}
+#| label: weekday-accidents
+
+## create plot of weekday vs. number of traffic accidents
+## YOUR CODE HERE
+```
+
+We see that ....
+
+
+```{julia}
+#| label: sessioninfo
+
+## add manual function for sessionInfo
+function sessioninfo()
+    println("Julia: v." * string(VERSION) * "\n")
+    pkgs = Pkg.project()
+    deps = Pkg.dependencies()
+
+    for p in pkgs.dependencies
+        pk = deps[last(p)]
+        println(pk.name, ": ", pk.version)
+    end
+end
+
+## print Julia version and package versions for reproducibility
+## Note that pk.version is "nothing" for stdlibs
+sessioninfo()
+```

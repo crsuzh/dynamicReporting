@@ -1,0 +1,355 @@
+---
+title: "Dynamic Reporting"
+subtitle: "Workshop at the UZH Reproducibility Day 2023"
+author: "Samuel Pawel and Felix Hofmann"
+institute: "Center for Reproducible Science (CRS)"
+format: 
+  revealjs:
+    width: 1400
+    height: 900
+embed-resources: true # create a single file with all depdencies inside
+---
+
+## Overview
+
+<!-- options: -->
+
+<!-- https://quarto.org/docs/reference/formats/presentations/revealjs.html -->
+
+<br> <br>
+
+1)  What is dynamic reporting?
+
+2)  How to do dynamic reporting?
+
+3)  Hands-on exercises
+
+::: aside
+Material at 
+
+- <https://github.com/crsuzh/dynamicReporting> 
+- <https://osf.io/x6h3y>
+:::
+
+::: notes
+Goal 1: First overview of dynamic reporting
+
+Goal 2: Learn about popular tools for dynamic reporting
+:::
+
+## Manual reporting workflow
+
+![](./diagram1.svg){.absolute width="100%"}
+
+## What are the disadvantages?
+
+::: columns
+::: column
+<br> <br>
+
+-   Tedious and error-prone
+-   Not directly reproducible
+-   Difficult to share/reuse
+-   New data → need to repeat everything
+:::
+
+::: column
+<br> <br>
+
+![](./diagram1.svg){fig-align="right"}
+:::
+:::
+
+::: notes
+After this slide:
+
+-   switch to RStudio and compile the example with `accidents_2020.csv`
+-   then change `filename` to `accidents_2021.csv` and recompile
+:::
+
+## Live Demo
+
+![](open_data_zurich.png){.absolute width="90%"}
+
+::: aside
+<https://data.stadt-zuerich.ch/dataset/sid_dav_strassenverkehrsunfallorte>
+:::
+
+
+## Dynamic reporting workflow
+
+![](diagram2.svg){.absolute width="100%"}
+
+
+## Popular tools for dynamic reporting
+
+<br> <br> <br>
+
+|                     | Programming language    | Markup language | Output format |
+|-----------------|----------------------|-----------------|-----------------|
+| `knitr` (.Rnw)      | **R**                        | LaTeX                | pdf                |
+| `R Markdown` (.Rmd) | **R**                        | Markdown             | html, pdf, docx, pptx    |
+| `Quarto` (.qmd)     | **R**, **Python**, **Julia** | Markdown             | html, pdf, docx, pptx    |
+
+
+## Components of dynamic reports
+
+<br>
+
+- Header
+- Text
+- Code chunk
+- Inline code
+
+## Header
+
+<br>
+
+`knitr`
+
+```latex
+\documentclass[a4paper, 11pt]{article}
+\title{Analysis of traffic accidents in Zürich}
+\author{Samuel Pawel and Felix Hofmann}
+\begin{document}
+```
+
+`R Markdown`
+
+```yaml
+---
+title: "Analysis of traffic accidents in Zürich"
+author: "Samuel Pawel and Felix Hofmann"
+output: html_document
+---
+```
+
+`Quarto`
+
+```yaml
+---
+title: "Analysis of traffic accidents in Zürich"
+author: "Samuel Pawel and Felix Hofmann"
+format: html
+---
+```
+
+## Text
+
+<br>
+
+`knitr`
+
+```latex
+\section{This is a section title}
+
+The textbf command renders a word \textbf{bold}. 
+Lists can be done as follows:
+
+\begin{itemize}
+    \item element 1
+    \item element 2
+\end{itemize}
+```
+
+<br>
+
+`R Markdown and Quarto`
+
+```markdown
+# This is a title
+
+Two stars will render a word **bold**. 
+We can also do lists:
+
+- element 1
+- element 2
+```
+
+## Code chunks
+
+<br>
+
+`knitr`
+
+```r
+<<>>=
+x <- seq(-3, 3, 0.01)
+plot(x, dnorm(x), type = "l")
+@
+```
+
+<br>
+
+`R Markdown` and `Quarto`
+
+````markdown
+`r ''````{r}
+x <- seq(-3, 3, 0.01)
+plot(x, dnorm(x), type = "l")
+```
+````
+<br>
+
+````markdown
+`r ''````{python}
+import numpy as np
+from scipy.stats import norm
+import matplotlib.pyplot as plt
+x = np.arange(-3, 3, 0.01)
+fig, ax = plt.subplots()
+ax.plot(x, norm.pdf(x)); fig.show()
+```
+````
+
+## Inline code
+
+<br>
+
+`knitr`
+
+```latex
+This inline code renders as 8: \Sexpr{3 + 5}.
+```
+
+<br>
+
+`R Markdown and Quarto`
+
+````markdown
+```{r echo=FALSE}
+#| results: asis
+cat(paste0("This inline chunk renders as 8:", "`r 3 + 5`", "."))
+```
+````
+
+## Which tool for whom?
+
+<br>
+
+-   `knitr` → **R**+**LaTeX** users (intermediate to advanced)
+-   `R Markdown` → **R** users (beginner to advanced)
+-   `Quarto` → **R**/**Python**/**Julia** users (beginner to advanced)
+
+![](knitr-meme.jpg){.absolute bottom="18%" left="0%" width="30%"} ![](rmarkdown-meme.jpg){.absolute bottom="0%" left="32%" width="30%"} ![](quarto-meme.jpg){.absolute bottom="10%" left="65%" width="30%"}
+
+## Useful links
+
+-   [Dynamic Reporting & Reproducibility in Research](https://www.sts.uzh.ch/de/Lehrangebote-School/Lehrangebote-ab-FS22/Future-Skills/Get-R_eady.html) <br> → transdisciplinary course at UZH
+
+-   [Dynamic Reporting Primer](https://doi.org/10.5281/zenodo.7565735) <br> → Primer article from the CRS
+
+-   [R Markdown tutorial](https://rmarkdown.rstudio.com/lesson-1.html) <br> → good tutorial series from R Studio
+
+-   [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/) <br> → freely available book
+
+-   [knitr website](https://yihui.org/knitr) <br> → very comprehensive website from the `knitr` author
+
+-   [Quarto tutorial](https://quarto.org/docs/get-started/hello/vscode.html) <br> → good tutorial series from R Studio
+
+-   [R Markdown cheatsheet](https://posit.co/resources/cheatsheets/)
+
+## Exercises
+
+<br>
+
+1) Download the data sets on **traffic accidents in Zurich** from <https://osf.io/x6h3y/>.
+
+2) Explore the data from **2020** (file `accidents_2020.csv`) . 
+   Compute the **number of accidents per weekday** and visualize your
+   results. Create an HTML report using either `R Markdown` or `Quarto`.
+
+3)  Now use the data from **2020** and **2021** (file `accidents_2021.csv`) and create an updated report.
+
+4)  **Bonus**: Explore the data set further, create additional plots and tables. Convert your report to 
+    an alternative output format.
+
+::: notes
+Felix
+:::
+
+## Backup: R Markdown
+
+<br>
+
+![](rmarkdown.png){.absolute top="0%" right="0%" width="20%"}
+
+-   **R** programming language <br> (\> 60 other also possible) <!-- https://bookdown.org/yihui/rmarkdown/language-engines.html -->
+
+-   **.Rmd** files (edit in RStudio, VS Code, etc.)
+
+-   Markup language: **Markdown**
+
+-   **HTML**, **PDF**, **DOCX** output formats (and more)
+
+-   `rmarkdown` is an **R** package
+
+::: aside
+<https://CRAN.R-project.org/package=rmarkdown>
+
+<https://rmarkdown.rstudio.com/index.html>
+:::
+
+::: notes
+Felix
+
+-   Mixture code and text (analysis and description)
+-   Composed of different parts (yaml header, markdown text, code chunks, inline code)
+    -   Why is this useful?
+-   Cross references (Figures, Tables, Chunks)
+-   Bibliography
+-   Different output formats for reports or slides (html, pdf, docx, pptx)
+-   Maybe explain how this is compiled? (Probably too technical)
+:::
+
+## Backup: knitr
+
+<br>
+
+![](knitr.png){.absolute top="0%" right="0%" width="20%"}
+
+-   Programming language: **R** <br> (\> 60 other also possible) <!-- https://bookdown.org/yihui/rmarkdown/language-engines.html -->
+
+-   **.Rnw** files (edit in RStudio, VS Code, etc.)
+
+-   Markup languages: **LaTeX** <br> (+ HTML, Markdown, and more)
+
+-   **PDF** output format (and more)
+
+-   `knitr` is an **R** package
+
+::: aside
+<https://CRAN.R-project.org/package=knitr>
+
+<https://yihui.org/knitr/>
+:::
+
+## Backup: Quarto
+
+<br>
+
+![](quarto.png){.absolute top="0%" right="0%" width="20%"}
+
+-   Programming language: **R**, **Python**, **Julia**
+
+-   **.qmd** files (edit in RStudio, VS Code, etc.)
+
+-   Markup language: **Markdown**
+
+-   **HTML**, **PDF**, **DOCX** output formats (and more)
+
+-   Evolution of R Markdown (introduced in 2022)
+
+-   `Quarto` is a separate program
+
+::: aside
+<https://quarto.org/>
+:::
+
+::: notes
+Felix
+
+-   Same parts as R markdown (yaml header, markdown text, code chunks, inline code)
+-   Slightly different syntax (Setting options, finer control over cross references)
+-   Different output formats (reveal.js - presentation, observable.js - interactive)
+:::

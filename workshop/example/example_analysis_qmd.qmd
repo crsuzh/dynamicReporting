@@ -1,0 +1,47 @@
+---
+title: "Analysis of traffic accidents in Zürich"
+author: "Samuel Pawel & Felix Hofmann"
+format: pdf
+---
+
+This document shows an analysis of traffic accidents in Zürich. The data data were downloaded
+from the data repository from the city of Zürich 
+(<https://data.stadt-zuerich.ch/dataset/sid_dav_strassenverkehrsunfallorte>).
+
+```{r echo = FALSE}
+## import data into R
+data <- read.csv("../accidents_2020.csv")
+
+## compute the number of accidents in total
+nrAccidents <- nrow(data)
+```
+
+The data set contains information on `r nrAccidents` traffic accidents. The following plot
+shows the number of accidents per month.
+
+```{r echo = FALSE, message = FALSE, warning = FALSE, fig.height = 4}
+## create plot of month vs. number of traffic accidents
+library(dplyr)
+library(ggplot2)
+data |>
+    group_by(month_name, year) |>
+    summarise(accidents = n()) |>
+    mutate(monthfac = factor(month_name, levels = month.name)) |>
+    ggplot(aes(x = monthfac, y = accidents, fill = factor(year))) +
+    geom_col(position = position_dodge2(), width = 0.5) +
+    labs(x = "Month", y = "Number of traffic accidents", fill = "Year") +
+    theme_minimal() +
+    theme(legend.position = "top",
+          axis.text.x = element_text(angle = 45, vjust = 0.5),
+          panel.grid.major.x = element_blank())
+```
+
+We see that in March and April 2020 there were much fewer traffic accidents compared to the 
+rest of the year. A possible explanation is the national lockdown due to the Covid-19 pandemic.
+
+
+```{r}
+## print R version and package versions for reproducibility
+sessionInfo()
+```
+
